@@ -493,12 +493,12 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
   const logo = proxiedImage(shop.logo, shop.name);
 
   return (
-    <main className="min-h-screen bg-[#f6f2ea] pb-28 text-[#231815]">
-      <section className="mx-auto max-w-[1180px] px-4 pb-10 pt-5 sm:px-6">
+    <main className="min-h-screen bg-[#f6f2ea] pb-36 text-[#231815] sm:pb-28">
+      <section className="mx-auto max-w-[1180px] px-3 pb-8 pt-3 sm:px-6 sm:pb-10 sm:pt-5">
         <div className="overflow-hidden rounded-[28px] border border-[#dbcdb8] bg-[linear-gradient(135deg,#fffdf9_0%,#f1e6d5_52%,#e8dac5_100%)] shadow-[0_24px_80px_rgba(94,64,35,0.12)]">
-          <div className="border-b border-[#e3d8c7] px-5 py-5 sm:px-8 sm:py-8">
-            <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-              <div className="h-20 w-20 overflow-hidden rounded-[24px] border border-[#d7c5aa] bg-white/80 shadow-sm">
+          <div className="border-b border-[#e3d8c7] px-4 py-4 sm:px-8 sm:py-8">
+            <div className="flex items-start gap-3 sm:gap-5">
+              <div className="h-16 w-16 shrink-0 overflow-hidden rounded-[20px] border border-[#d7c5aa] bg-white/80 shadow-sm sm:h-20 sm:w-20 sm:rounded-[24px]">
                 {logo ? (
                   <Image
                     alt={shop.name}
@@ -508,31 +508,31 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                     width={160}
                   />
                 ) : (
-                  <div className="flex h-full items-center justify-center text-2xl font-semibold text-[#8a623b]">
+                  <div className="flex h-full items-center justify-center text-xl font-semibold text-[#8a623b] sm:text-2xl">
                     W
                   </div>
                 )}
               </div>
 
               <div className="flex-1">
-                <div className="mb-2 inline-flex rounded-full border border-[#d1bb9b] bg-[#fff8ec] px-3 py-1 text-xs font-semibold tracking-[0.18em] text-[#8d6335]">
+                <div className="mb-2 inline-flex max-w-full rounded-full border border-[#d1bb9b] bg-[#fff8ec] px-2.5 py-1 text-[10px] font-semibold tracking-[0.14em] text-[#8d6335] sm:px-3 sm:text-xs sm:tracking-[0.18em]">
                   SAME PRODUCTS · SAME PRICES
                 </div>
-                <h1 className="text-3xl font-semibold tracking-tight text-[#2d1b0f] sm:text-4xl">
+                <h1 className="text-[2rem] font-semibold tracking-tight text-[#2d1b0f] sm:text-4xl">
                   {shop.name}
                 </h1>
-                <p className="mt-3 max-w-4xl whitespace-pre-line text-sm leading-7 text-[#5f4835] sm:text-[15px]">
+                <p className="mt-2 max-w-4xl whitespace-pre-line text-xs leading-5 text-[#5f4835] line-clamp-5 sm:mt-3 sm:text-[15px] sm:leading-7 sm:line-clamp-none">
                   {shop.desc}
                 </p>
 
-                <div className="mt-5 flex flex-wrap gap-3 text-sm text-[#6d563f]">
+                <div className="mt-3 flex flex-wrap gap-2 text-xs text-[#6d563f] sm:mt-5 sm:gap-3 sm:text-sm">
                   {shop.address ? (
-                    <span className="rounded-full bg-white/70 px-4 py-2">
+                    <span className="rounded-full bg-white/70 px-3 py-1.5 sm:px-4 sm:py-2">
                       地址: {shop.address}
                     </span>
                   ) : null}
                   {shop.tel ? (
-                    <span className="rounded-full bg-white/70 px-4 py-2">
+                    <span className="rounded-full bg-white/70 px-3 py-1.5 sm:px-4 sm:py-2">
                       电话: {shop.tel}
                     </span>
                   ) : null}
@@ -541,20 +541,20 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
             </div>
           </div>
 
-          <div className="grid gap-6 px-3 py-4 sm:px-5 lg:grid-cols-[240px_minmax(0,1fr)]">
+          <div className="grid gap-4 px-2 py-3 sm:gap-6 sm:px-5 sm:py-4 lg:grid-cols-[240px_minmax(0,1fr)]">
             <aside className="lg:sticky lg:top-4 lg:self-start">
-              <div className="rounded-[24px] border border-[#e0d4c1] bg-white/80 p-3 backdrop-blur">
-                <div className="px-2 pb-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#9b7b59]">
+              <div className="rounded-[22px] border border-[#e0d4c1] bg-white/80 p-2.5 backdrop-blur sm:rounded-[24px] sm:p-3">
+                <div className="px-2 pb-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#9b7b59] sm:text-xs sm:tracking-[0.22em]">
                   分类导航
                 </div>
-                <div className="flex gap-2 overflow-x-auto lg:block lg:space-y-2">
+                <div className="flex gap-2 overflow-x-auto pb-1 lg:block lg:space-y-2 lg:pb-0">
                   {menu.map((category) => {
                     const isActive = category._id === activeCategory;
 
                     return (
                       <button
                         className={[
-                          "min-w-fit rounded-2xl border px-4 py-3 text-left text-sm transition",
+                          "min-w-fit whitespace-nowrap rounded-2xl border px-3.5 py-2.5 text-left text-xs transition sm:px-4 sm:py-3 sm:text-sm",
                           isActive
                             ? "border-[#8f6234] bg-[#8f6234] text-white shadow-[0_14px_34px_rgba(143,98,52,0.22)]"
                             : "border-[#eadfcd] bg-[#fbf8f2] text-[#5f4937] hover:border-[#c49a6c] hover:bg-white"
@@ -574,24 +574,24 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
             <div className="space-y-6">
               {displayedCategory ? (
                   <section
-                    className="rounded-[28px] border border-[#e4d8c8] bg-white/85 p-4 shadow-[0_18px_50px_rgba(70,44,20,0.06)] sm:p-5"
+                    className="rounded-[24px] border border-[#e4d8c8] bg-white/85 p-3 shadow-[0_18px_50px_rgba(70,44,20,0.06)] sm:rounded-[28px] sm:p-5"
                     key={displayedCategory._id}
                   >
-                    <div className="mb-4 flex items-end justify-between gap-4 border-b border-[#efe5d8] pb-4">
+                    <div className="mb-3 flex items-start justify-between gap-3 border-b border-[#efe5d8] pb-3 sm:mb-4 sm:items-end sm:gap-4 sm:pb-4">
                       <div>
-                        <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a17a52]">
+                        <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#a17a52] sm:text-xs sm:tracking-[0.2em]">
                           Category
                         </div>
-                        <h2 className="mt-1 text-2xl font-semibold text-[#2d1b0f]">
+                        <h2 className="mt-1 text-xl font-semibold text-[#2d1b0f] sm:text-2xl">
                           {displayedCategory.name}
                         </h2>
                       </div>
-                      <div className="rounded-full bg-[#f6ede1] px-3 py-1 text-sm text-[#8a6844]">
+                      <div className="shrink-0 rounded-full bg-[#f6ede1] px-3 py-1 text-xs text-[#8a6844] sm:text-sm">
                         {displayedCategory.items.length} 件
                       </div>
                     </div>
 
-                    <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+                    <div className="grid grid-cols-2 gap-3 sm:gap-4 xl:grid-cols-3">
                       {displayedCategory.items.map((item) => {
                         const image = proxiedImage(item.photo, item.name);
                         const price = normalizePrice(item.price);
@@ -603,7 +603,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                             key={item._id}
                           >
                             <button
-                              className="relative block aspect-[4/3] overflow-hidden bg-[#f2e7d8]"
+                              className="relative block aspect-square overflow-hidden bg-[#f2e7d8] sm:aspect-[4/3]"
                               onClick={() => setSelectedItem(item)}
                               type="button"
                             >
@@ -620,44 +620,44 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                                   暂无图片
                                 </div>
                               )}
-                              <div className="absolute left-3 top-3 rounded-full bg-white/92 px-3 py-1 text-xs font-semibold text-[#7f5b37]">
+                              <div className="absolute left-2.5 top-2.5 rounded-full bg-white/92 px-2.5 py-1 text-[11px] font-semibold text-[#7f5b37] sm:left-3 sm:top-3 sm:px-3 sm:text-xs">
                                 {formatPrice(price, currency)}
                               </div>
                             </button>
 
-                            <div className="flex flex-1 flex-col px-4 py-4">
-                              <h3 className="line-clamp-2 text-base font-semibold leading-6 text-[#29180f]">
+                            <div className="flex flex-1 flex-col px-3 py-3 sm:px-4 sm:py-4">
+                              <h3 className="line-clamp-2 text-sm font-semibold leading-5 text-[#29180f] sm:text-base sm:leading-6">
                                 {item.name}
                               </h3>
                               {item.desc ? (
-                                <p className="mt-2 line-clamp-2 text-sm text-[#7a624d]">
+                                <p className="mt-1.5 line-clamp-2 text-xs text-[#7a624d] sm:mt-2 sm:text-sm">
                                   {item.desc}
                                 </p>
                               ) : null}
 
-                              <div className="mt-4 flex items-center justify-between gap-3">
+                              <div className="mt-3 flex flex-col gap-2.5 sm:mt-4 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                                 <div>
-                                  <div className="text-xs uppercase tracking-[0.18em] text-[#a28463]">
+                                  <div className="text-[10px] uppercase tracking-[0.14em] text-[#a28463] sm:text-xs sm:tracking-[0.18em]">
                                     Price
                                   </div>
-                                  <div className="text-xl font-semibold text-[#8f6234]">
+                                  <div className="text-lg font-semibold text-[#8f6234] sm:text-xl">
                                     {formatPrice(price, currency)}
                                   </div>
                                 </div>
 
-                                <div className="flex items-center gap-2 rounded-full border border-[#e7d7c2] bg-[#faf4eb] p-1">
+                                <div className="flex items-center justify-between gap-1.5 rounded-full border border-[#e7d7c2] bg-[#faf4eb] p-1 sm:gap-2">
                                   <button
-                                    className="h-9 w-9 rounded-full bg-white text-lg text-[#7d5730] transition hover:bg-[#f2e4d0]"
+                                    className="h-8 w-8 rounded-full bg-white text-base text-[#7d5730] transition hover:bg-[#f2e4d0] sm:h-9 sm:w-9 sm:text-lg"
                                     onClick={() => updateCount(item._id, -1)}
                                     type="button"
                                   >
                                     -
                                   </button>
-                                  <span className="min-w-8 text-center text-sm font-semibold text-[#4d3420]">
+                                  <span className="min-w-6 text-center text-xs font-semibold text-[#4d3420] sm:min-w-8 sm:text-sm">
                                     {count}
                                   </span>
                                   <button
-                                    className="h-9 w-9 rounded-full bg-[#8f6234] text-lg text-white transition hover:bg-[#754d26]"
+                                    className="h-8 w-8 rounded-full bg-[#8f6234] text-base text-white transition hover:bg-[#754d26] sm:h-9 sm:w-9 sm:text-lg"
                                     onClick={() => updateCount(item._id, 1)}
                                     type="button"
                                   >
@@ -1014,38 +1014,40 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
         </div>
       ) : null}
 
-      <div className="fixed bottom-4 left-1/2 z-30 w-[min(960px,calc(100%-24px))] -translate-x-1/2">
-        <div className="overflow-hidden rounded-[26px] border border-[#d7c4aa] bg-[#2f2014] text-white shadow-[0_24px_70px_rgba(47,32,20,0.35)]">
-          <div className="flex flex-col gap-4 px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="fixed bottom-3 left-1/2 z-30 w-[min(960px,calc(100%-16px))] -translate-x-1/2 sm:bottom-4 sm:w-[min(960px,calc(100%-24px))]">
+        <div className="overflow-hidden rounded-[22px] border border-[#d7c4aa] bg-[#2f2014] text-white shadow-[0_24px_70px_rgba(47,32,20,0.35)] sm:rounded-[26px]">
+          <div className="flex flex-col gap-3 px-4 py-3.5 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-5 sm:py-4">
             <div>
-              <div className="text-xs uppercase tracking-[0.2em] text-[#d7bf9b]">
+              <div className="text-[11px] uppercase tracking-[0.16em] text-[#d7bf9b] sm:text-xs sm:tracking-[0.2em]">
                 购物车
               </div>
-              <div className="mt-1 text-lg font-semibold">
+              <div className="mt-1 text-base font-semibold sm:text-lg">
                 {totalCount > 0
                   ? `${totalCount} 件商品 · ${formatPrice(totalPrice, currency)}`
                   : "还没有添加商品"}
               </div>
               {promoSummary.discount > 0 ? (
-                <div className="mt-1 text-sm text-[#f4d9a8]">
+                <div className="mt-1 text-xs text-[#f4d9a8] sm:text-sm">
                   已优惠 {formatPrice(promoSummary.discount, currency)}
                 </div>
               ) : null}
               {shop.tips ? (
-                <div className="mt-1 text-sm text-[#ead9c1]">{shop.tips}</div>
+                <div className="mt-1 hidden line-clamp-2 text-xs text-[#ead9c1] sm:block sm:text-sm">
+                  {shop.tips}
+                </div>
               ) : null}
             </div>
 
-            <div className="flex gap-3">
+            <div className="grid grid-cols-2 gap-2.5 sm:flex sm:gap-3">
               <button
-                className="rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white/90 transition hover:bg-white/10"
+                className="rounded-full border border-white/20 px-4 py-2.5 text-sm font-semibold text-white/90 transition hover:bg-white/10 sm:px-5 sm:py-3"
                 onClick={() => setCartOpen((open) => !open)}
                 type="button"
               >
                 {cartOpen ? "收起清单" : "查看清单"}
               </button>
               <button
-                className="rounded-full bg-[#f4d9a8] px-5 py-3 text-sm font-semibold text-[#513516]"
+                className="rounded-full bg-[#f4d9a8] px-4 py-2.5 text-sm font-semibold text-[#513516] sm:px-5 sm:py-3"
                 onClick={openCheckout}
                 type="button"
               >
@@ -1055,15 +1057,15 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
           </div>
 
           {cartOpen ? (
-            <div className="border-t border-white/10 bg-[#3a2718] px-5 py-4">
+            <div className="border-t border-white/10 bg-[#3a2718] px-4 py-3.5 sm:px-5 sm:py-4">
               {cartItems.length > 0 ? (
                 <div className="grid gap-3">
                   {cartItems.map((entry) => (
                     <div
-                      className="flex items-center gap-3 rounded-[20px] border border-white/10 bg-white/5 px-3 py-3"
+                      className="grid grid-cols-[48px_minmax(0,1fr)_auto] items-center gap-2.5 rounded-[18px] border border-white/10 bg-white/5 px-3 py-3 sm:flex sm:gap-3 sm:rounded-[20px]"
                       key={entry.id}
                     >
-                      <div className="h-14 w-14 overflow-hidden rounded-2xl bg-white/10">
+                      <div className="h-12 w-12 overflow-hidden rounded-xl bg-white/10 sm:h-14 sm:w-14 sm:rounded-2xl">
                         {entry.item.photo ? (
                           <Image
                             alt={entry.item.name}
@@ -1076,20 +1078,20 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                       </div>
 
                       <div className="min-w-0 flex-1">
-                        <div className="truncate text-sm font-semibold text-white">
+                        <div className="truncate text-xs font-semibold text-white sm:text-sm">
                           {entry.item.name}
                         </div>
-                        <div className="text-xs text-[#d8c4a7]">
+                        <div className="text-[11px] text-[#d8c4a7] sm:text-xs">
                           单价 {formatPrice(entry.unitPrice, currency)}
                         </div>
                         {(promoSummary.freeItemCounts[entry.id] ?? 0) > 0 ? (
-                          <div className="text-xs font-semibold text-[#f4d9a8]">
+                          <div className="text-[11px] font-semibold text-[#f4d9a8] sm:text-xs">
                             赠送 {promoSummary.freeItemCounts[entry.id]} 件
                           </div>
                         ) : null}
                       </div>
 
-                      <div className="flex items-center gap-2">
+                      <div className="col-span-2 flex items-center gap-2 sm:col-auto">
                         <button
                           className="h-8 w-8 rounded-full bg-white/10"
                           onClick={() => updateCount(entry.id, -1)}
@@ -1109,7 +1111,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                         </button>
                       </div>
 
-                      <div className="w-24 text-right text-sm font-semibold text-[#f6ddb2]">
+                      <div className="w-auto text-right text-xs font-semibold text-[#f6ddb2] sm:w-24 sm:text-sm">
                         {formatPrice(entry.total, currency)}
                       </div>
                     </div>
