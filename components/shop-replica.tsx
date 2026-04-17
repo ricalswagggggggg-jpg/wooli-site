@@ -232,6 +232,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
   const [selectedItem, setSelectedItem] = useState<ShopItem | null>(null);
   const [cartOpen, setCartOpen] = useState(false);
   const [checkoutOpen, setCheckoutOpen] = useState(false);
+  const [snapshotSaving, setSnapshotSaving] = useState(false);
   const [checkoutForm, setCheckoutForm] = useState<CheckoutForm>({
     fulfillment: "shipping",
     name: "",
@@ -300,15 +301,18 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
     return "自取";
   }
 
-  function downloadOrderSnapshot() {
+  async function downloadOrderSnapshot() {
     if (cartItems.length === 0) {
       return;
     }
+
+    setSnapshotSaving(true);
 
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
 
     if (!context) {
+      setSnapshotSaving(false);
       return;
     }
 
@@ -483,10 +487,48 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
     );
     context.textAlign = "left";
 
-    const link = document.createElement("a");
-    link.href = canvas.toDataURL("image/png");
-    link.download = `wooli-order-${Date.now()}.png`;
-    link.click();
+    try {
+      const blob = await new Promise<Blob | null>((resolve) => {
+        canvas.toBlob((value) => resolve(value), "image/png");
+      });
+
+      if (!blob) {
+        return;
+      }
+
+      const filename = `wooli-order-${Date.now()}.png`;
+      const file = new File([blob], filename, { type: "image/png" });
+
+      if (
+        typeof navigator !== "undefined" &&
+        "share" in navigator &&
+        "canShare" in navigator &&
+        navigator.canShare({ files: [file] })
+      ) {
+        await navigator.share({
+          files: [file],
+          title: "Wooli 购物车确认单",
+          text: "请保存图片后发送给客服确认订单"
+        });
+        return;
+      }
+
+      const objectUrl = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = objectUrl;
+      link.download = filename;
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+    } catch (error) {
+      if (!(error instanceof DOMException && error.name === "AbortError")) {
+        const link = document.createElement("a");
+        link.href = canvas.toDataURL("image/png");
+        link.download = `wooli-order-${Date.now()}.png`;
+        link.click();
+      }
+    } finally {
+      setSnapshotSaving(false);
+    }
   }
 
   const currency = shop.currency || "$";
@@ -998,7 +1040,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                     onClick={downloadOrderSnapshot}
                     type="button"
                   >
-                    确认订单并保存购物车截图
+                    {snapshotSaving ? "正在生成订单图片..." : "确认订单并保存购物车截图"}
                   </button>
                   <button
                     className="rounded-full border border-[#d9c6ab] px-5 py-2.5 text-sm font-semibold text-[#6f4b28]"
