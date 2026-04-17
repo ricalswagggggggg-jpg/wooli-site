@@ -1,0 +1,3230 @@
+{
+  "status": true,
+  "content": {
+    "shop": {
+      "_id": "67f873850dcd6c1b7db6cbeb",
+      "name": "雾里小铺wooli",
+      "tel": "9175010211",
+      "status": 1,
+      "order_name": "-1",
+      "order_phone": "2",
+      "order_address": "-1",
+      "peisong_fee": 0,
+      "peisong_free": 100,
+      "peisong_start": 0,
+      "layout": "sidebar",
+      "currency": "$",
+      "address": "Skyview fls  ｜ Jackson park lic",
+      "desc": "客服微信：wulixiaopu-nyc\n\n🔥优惠活动：\n\n烟弹： \n         买5盒送1盒\n         买10盒送3盒（或六代基础机器）\n\n一次性电子烟：\n         买5送1\n         买10送3\n\n🌟下单流程：\n1️⃣添加购物车-2️⃣截图购物车-3️⃣然后找客服付款\n\n纽约当天送货🚗 全美邮寄三日达📦\n",
+      "logo": "/photo/67f873850dcd6c1b7db6cbeb-1744337136174.jpeg",
+      "tips": "点击确认下单 然后找客服付款"
+    },
+    "menu": [
+      {
+        "_id": "69163d0f5feaeb50dd2edf11",
+        "status": 1,
+        "name": "截图购物车，然后添加客服付款！",
+        "priority": 23,
+        "items": [
+          {
+            "_id": "69163e535feaeb50dd2edf19",
+            "status": 1,
+            "cateid": "69163d0f5feaeb50dd2edf11",
+            "name": "客服微信wulixiaopu-nyc",
+            "photo": "/wooli-images/001-b24e32c1fe7b8e97.jpeg",
+            "priority": 0,
+            "price": 0
+          }
+        ]
+      },
+      {
+        "_id": "67f873a20dcd6c1b7db6cbed",
+        "name": "Relx 烟弹 极凉三颗装",
+        "priority": 22,
+        "items": [
+          {
+            "_id": "67f88a9f7910fa62ad9abad1",
+            "name": "Relx（极凉三颗装）伯牙绝弦",
+            "price": 15,
+            "photo": "/wooli-images/002-ee95d3569ed25a17.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "dabaofei": 0,
+            "priority": 38
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cbf2",
+            "name": "Relx（极凉三颗装）西瓜椰椰",
+            "price": 15,
+            "photo": "/wooli-images/003-995a380f1b93148e.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 37,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cbf0",
+            "name": "Relx（极凉三颗装）桂馥兰香",
+            "price": 15,
+            "photo": "/wooli-images/004-165949b5c89711ff.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "dabaofei": 0,
+            "priority": 36
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cbf3",
+            "name": "Relx（极凉三颗装）鸭屎香柠檬茶",
+            "price": 15,
+            "photo": "/wooli-images/005-1d5c47607fc5f44a.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 35,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f8aba57910fa62ad9abc23",
+            "name": "Relx（极凉三颗装）蜜桃乌龙",
+            "price": 15,
+            "photo": "/wooli-images/006-670149494b54a268.jpeg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "dabaofei": 0,
+            "priority": 34
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc25",
+            "name": "Relx（极凉三颗装）冰豆浆",
+            "price": 15,
+            "photo": "/wooli-images/007-6bd768b2c7127327.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 33,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc27",
+            "name": "Relx（极凉三颗装）望山楂",
+            "price": 15,
+            "photo": "/wooli-images/008-bacd2fbd32c72623.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 32,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc24",
+            "name": "Relx（极凉三颗装）黄瓜柠檬水",
+            "price": 15,
+            "photo": "/wooli-images/009-291a0c16c74c3aa4.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 31,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc23",
+            "name": "Relx（极凉三颗装）抹茶星冰乐",
+            "price": 15,
+            "photo": "/wooli-images/010-aaf6a28afa9e574a.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 30,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc22",
+            "name": "Relx（极凉三颗装）青提茉莉茶",
+            "price": 15,
+            "photo": "/wooli-images/011-16a5a94c3b6170b1.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 29,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc0c",
+            "name": "Relx（极凉三颗装）西瓜白桃茉莉茶",
+            "price": 15,
+            "photo": "/wooli-images/012-2abc3481a9a68d4d.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 28,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc26",
+            "name": "Relx（极凉三颗装）青梅绿茶",
+            "price": 15,
+            "photo": "/wooli-images/013-964ffedd318b3a29.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 27,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cbf4",
+            "name": "Relx（极凉三颗装）洛神花茶",
+            "price": 15,
+            "photo": "/wooli-images/014-c3359b50ca406614.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 26,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc06",
+            "name": "Relx（极凉三颗装）乌龙茶/铁观音",
+            "price": 15,
+            "photo": "/wooli-images/015-b1399dcb87d0598a.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 25,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cbfe",
+            "name": "Relx（极凉三颗装）柠檬茶",
+            "price": 15,
+            "photo": "/wooli-images/016-11c6374662c6b888.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 24,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc18",
+            "name": "Relx（极凉三颗装）中式红茶",
+            "price": 15,
+            "photo": "/wooli-images/017-5e574e599be497ff.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 23,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc0e",
+            "name": "Relx（极凉三颗装）青柑普洱",
+            "price": 15,
+            "photo": "/wooli-images/018-70659929504dc323.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 22,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc12",
+            "name": "Relx（极凉三颗装）菊花茶",
+            "price": 15,
+            "photo": "/wooli-images/019-c5775beaa4fc617b.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 21,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc17",
+            "name": "Relx（极凉三颗装）龙井茶",
+            "price": 15,
+            "photo": "/wooli-images/020-eeeb9a12278f9f4c.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 20,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc19",
+            "name": "Relx（极凉三颗装）茉莉绿茶",
+            "price": 15,
+            "photo": "/wooli-images/021-3979a462961acab3.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 19,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc14",
+            "name": "Relx （极凉三颗装）百香果绿茶",
+            "price": 15,
+            "photo": "/wooli-images/022-b8fff5c3d179cfab.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 18,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc1d",
+            "name": "Relx（极凉三颗装）绿豆冰棒",
+            "price": 15,
+            "photo": "/wooli-images/023-491fcd64735992ec.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 17,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cbfa",
+            "name": "Relx（极凉三颗装）香芋冰淇淋",
+            "price": 15,
+            "photo": "/wooli-images/024-45e05f53a21a2472.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 16,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc01",
+            "name": "Relx（极凉三颗装）极凉芒果",
+            "price": 15,
+            "photo": "/wooli-images/025-89fcb49b9abd7067.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 15,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc1f",
+            "name": "Relx（极凉三颗装）老冰棍",
+            "price": 15,
+            "photo": "/wooli-images/026-0a2076ad840c2524.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 14,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cbfb",
+            "name": "Relx（极凉三颗装）零度薄荷",
+            "price": 15,
+            "photo": "/wooli-images/027-adda7360d64ee818.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 13,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cbff",
+            "name": "Relx（极凉三颗装）雪玉冰荔枝",
+            "price": 15,
+            "photo": "/wooli-images/028-1fe87b748ce02ca1.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 12,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc0d",
+            "name": "Relx（极凉三颗装）海盐荔枝",
+            "price": 15,
+            "photo": "/wooli-images/029-700e88e80dadca27.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 11,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc0a",
+            "name": "Relx（极凉三颗装）红豆冰",
+            "price": 15,
+            "photo": "/wooli-images/030-b85d90ab6032d7ed.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 10,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc11",
+            "name": "Relx（极凉三颗装）极凉青柠",
+            "price": 15,
+            "photo": "/wooli-images/031-579908bc8cc9526e.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 9,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc13",
+            "name": "Relx（极凉三颗装）多汁葡萄",
+            "price": 15,
+            "photo": "/wooli-images/032-787492786822b72d.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 8,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc15",
+            "name": "Relx（极凉三颗装）宝矿力",
+            "price": 15,
+            "photo": "/wooli-images/033-7698ef26f6fbaf9a.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 7,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc16",
+            "name": "Relx（极凉三颗装）海盐柠檬",
+            "price": 15,
+            "photo": "/wooli-images/034-3419bccb3709148f.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 6,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc1c",
+            "name": "Relx（极凉三颗装）冰镇西瓜",
+            "price": 15,
+            "photo": "/wooli-images/035-369fd9186cd25a7e.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 5,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc21",
+            "name": "Relx（极凉三颗装）可乐冰",
+            "price": 15,
+            "photo": "/wooli-images/036-964b177a6ae670f2.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "priority": 4,
+            "dabaofei": 0
+          },
+          {
+            "_id": "6855af500817984228a5ade3",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "name": "Relx（极凉三颗装）极凉青提",
+            "price": 15,
+            "priority": 3,
+            "dabaofei": 0,
+            "photo": "/wooli-images/037-c0419ea287e60ac1.png"
+          },
+          {
+            "_id": "6855af5d0817984228a5ade4",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "name": "Relx（极凉三颗装）菠萝冰",
+            "price": 15,
+            "priority": 2,
+            "dabaofei": 0,
+            "photo": "/wooli-images/038-1219d9b67c99ded8.png"
+          },
+          {
+            "_id": "6855af750817984228a5ade5",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cbed",
+            "name": "Relx（极凉三颗装）绿宝石甜瓜",
+            "price": 15,
+            "priority": 1,
+            "dabaofei": 0,
+            "photo": "/wooli-images/039-3a278ce5e959906c.png"
+          }
+        ]
+      },
+      {
+        "_id": "6855a2580817984228a5adad",
+        "status": 1,
+        "name": "Relx 烟弹 2颗装（陶瓷芯）",
+        "priority": 21,
+        "items": [
+          {
+            "_id": "6855a3100817984228a5adae",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）茉莉茶",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/040-edecc49e3b23be23.jpeg"
+          },
+          {
+            "_id": "6855a5850817984228a5adaf",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）蜂蜜柚子",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/041-93fa19761e92a082.jpeg"
+          },
+          {
+            "_id": "6855a5910817984228a5adb0",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）蓝莓",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/042-cade4dbc63dc721c.jpeg"
+          },
+          {
+            "_id": "6855a5980817984228a5adb1",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）哈密瓜",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/043-3a46a89f5c2f2f1d.jpeg"
+          },
+          {
+            "_id": "6855a5a50817984228a5adb2",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）蔓越莓",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/044-2263cc854fb69e3e.jpeg"
+          },
+          {
+            "_id": "6855a5ad0817984228a5adb3",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）红苹果",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/045-33b31a3d8217dc9f.jpeg"
+          },
+          {
+            "_id": "6855a5bb0817984228a5adb4",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）荔枝柠檬水",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/046-7147eb1af93b19bb.jpeg"
+          },
+          {
+            "_id": "6855a5c60817984228a5adb5",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）葡萄苹果",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/047-d83c81264b290bb6.jpeg"
+          },
+          {
+            "_id": "6855a5f10817984228a5adb6",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）橙子",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/048-528a206a1e39c5af.jpeg"
+          },
+          {
+            "_id": "6855a60b0817984228a5adb7",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）冰纷玫瑰",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/049-cdfb2868253052e3.jpeg"
+          },
+          {
+            "_id": "6855a6130817984228a5adb8",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）西梅",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/050-eb875aae08fa59fb.jpeg"
+          },
+          {
+            "_id": "6855a6240817984228a5adb9",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）雪碧",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/051-5f2cff0584b4ef95.jpeg"
+          },
+          {
+            "_id": "6855a6360817984228a5adba",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）极凉矿泉水",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/052-9a1282ba10c8acec.jpeg"
+          },
+          {
+            "_id": "6855a6400817984228a5adbb",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）榛果咖啡",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/053-df371522e5ad4d1c.jpeg"
+          },
+          {
+            "_id": "6855a6480817984228a5adbc",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）葡萄",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/054-1f43c17edb846ba8.jpeg"
+          },
+          {
+            "_id": "6855a6520817984228a5adbd",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）百香果",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/055-b36163512f8ce9af.jpeg"
+          },
+          {
+            "_id": "6855a6580817984228a5adbe",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）奇异果",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/056-d06069f7dca8b554.jpeg"
+          },
+          {
+            "_id": "6855a6690817984228a5adbf",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）烟草",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/057-caf7f54165da6103.jpeg"
+          },
+          {
+            "_id": "6855a6750817984228a5adc0",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）青柠",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/058-68a8933ced2007d4.jpeg"
+          },
+          {
+            "_id": "6855a67e0817984228a5adc1",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）番石榴",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/059-938073407c57d848.jpeg"
+          },
+          {
+            "_id": "6855a68b0817984228a5adc2",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）凉荔枝",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/060-8d4632ed8258e0f5.jpeg"
+          },
+          {
+            "_id": "6855a6970817984228a5adc3",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）红茶",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/061-96b3a3b574a427c3.jpeg"
+          },
+          {
+            "_id": "6855a6a90817984228a5adc4",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）薄荷",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/062-40a91723dc2d5846.jpeg"
+          },
+          {
+            "_id": "6855a6c00817984228a5adc5",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）蜜桃茶",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/063-c6735e23d85d43b7.jpeg"
+          },
+          {
+            "_id": "6855a6c70817984228a5adc6",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）洛神花茶",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/064-ad455f82b7250435.jpeg"
+          },
+          {
+            "_id": "6855a6ce0817984228a5adc7",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）桃子",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/065-53680ad803414cc8.jpeg"
+          },
+          {
+            "_id": "6855a6d50817984228a5adc8",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）香芋",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/066-0ddeffe1cb41616f.jpeg"
+          },
+          {
+            "_id": "6855a6db0817984228a5adc9",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）可乐",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/067-f569eca52ae61cc3.jpeg"
+          },
+          {
+            "_id": "6855a6e40817984228a5adca",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）柠檬茶",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/068-bfae6369b3aee4e0.jpeg"
+          },
+          {
+            "_id": "6855a6ed0817984228a5adcb",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）零度薄荷",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/069-6b176a332f100c05.jpeg"
+          },
+          {
+            "_id": "6855a6f50817984228a5adcc",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）老冰棍",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/070-67634b6dc5ba93b0.jpeg"
+          },
+          {
+            "_id": "6855a70d0817984228a5adce",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）草莓",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/071-6193a1fae08d4381.jpeg"
+          },
+          {
+            "_id": "6855a7150817984228a5adcf",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）青提",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/072-090e13ce6649183b.jpeg"
+          },
+          {
+            "_id": "6855a7200817984228a5add0",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）西瓜",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/073-da12a2a200c75051.jpeg"
+          },
+          {
+            "_id": "6855a7280817984228a5add1",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）龙井",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/074-7123397b98ed0ee7.jpeg"
+          },
+          {
+            "_id": "6855a7300817984228a5add2",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）绿豆",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/075-585afc07f7799f4d.jpeg"
+          },
+          {
+            "_id": "689bb2525feaeb50dd2eddc5",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）青苹果",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/076-1d49cadb16523b89.jpeg"
+          },
+          {
+            "_id": "689bb2605feaeb50dd2eddc6",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）铁观音（乌龙茶）",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/077-0691c95ca3929fb7.jpeg"
+          },
+          {
+            "_id": "689bb26a5feaeb50dd2eddc7",
+            "status": 1,
+            "cateid": "6855a2580817984228a5adad",
+            "name": "Relx（2颗装）粉红柠檬",
+            "price": 12,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/078-2e7361623db61013.jpeg"
+          }
+        ]
+      },
+      {
+        "_id": "681d12c30817984228a5a979",
+        "status": 1,
+        "name": "Relx 乐高积木 🌟",
+        "priority": 20,
+        "items": [
+          {
+            "_id": "681d169b0817984228a5a97b",
+            "status": 1,
+            "cateid": "681d12c30817984228a5a979",
+            "photo": "/wooli-images/079-006e82101cb4f014.jpeg",
+            "name": "套餐一$99: 1机器 4烟弹 🔥 套餐二$200: 1机器 10烟弹 ",
+            "price": 0,
+            "priority": 12,
+            "dabaofei": 0
+          },
+          {
+            "_id": "681d192d0817984228a5a97d",
+            "status": 1,
+            "cateid": "681d12c30817984228a5a979",
+            "name": "乐高机器不单卖‼️",
+            "photo": "/wooli-images/080-4e80a3239628398b.jpeg",
+            "price": null,
+            "priority": 11,
+            "dabaofei": 0
+          },
+          {
+            "_id": "681d20540817984228a5a980",
+            "status": 1,
+            "cateid": "681d12c30817984228a5a979",
+            "name": "Relx 乐高积木 西瓜",
+            "price": 20,
+            "priority": 10,
+            "dabaofei": 0,
+            "photo": "/wooli-images/081-9fcc8a41e8f68959.png"
+          },
+          {
+            "_id": "681d20380817984228a5a97e",
+            "status": 1,
+            "cateid": "681d12c30817984228a5a979",
+            "name": "Relx 乐高积木 葡萄",
+            "price": 20,
+            "priority": 9,
+            "dabaofei": 0,
+            "photo": "/wooli-images/082-8a7d0390365deda8.jpeg"
+          },
+          {
+            "_id": "681d204a0817984228a5a97f",
+            "status": 1,
+            "cateid": "681d12c30817984228a5a979",
+            "name": "Relx 乐高积木 百香果",
+            "price": 20,
+            "priority": 8,
+            "dabaofei": 0,
+            "photo": "/wooli-images/083-1f0f775f1463184b.jpeg"
+          },
+          {
+            "_id": "681d205c0817984228a5a981",
+            "status": 1,
+            "cateid": "681d12c30817984228a5a979",
+            "name": "Relx 乐高积木 椰子水",
+            "price": 20,
+            "priority": 7,
+            "dabaofei": 0,
+            "photo": "/wooli-images/084-884f1da4c1ee54da.jpeg"
+          },
+          {
+            "_id": "681d20650817984228a5a982",
+            "status": 1,
+            "cateid": "681d12c30817984228a5a979",
+            "name": "Relx 乐高积木 荔枝",
+            "price": 20,
+            "priority": 6,
+            "dabaofei": 0,
+            "photo": "/wooli-images/085-adb1b8ce8765c08b.jpeg"
+          },
+          {
+            "_id": "681d20850817984228a5a984",
+            "status": 1,
+            "cateid": "681d12c30817984228a5a979",
+            "name": "Relx 乐高积木 芭乐（番石榴）",
+            "price": 20,
+            "priority": 5,
+            "dabaofei": 0,
+            "photo": "/wooli-images/086-0251ba6732072815.jpeg"
+          },
+          {
+            "_id": "681d206c0817984228a5a983",
+            "status": 1,
+            "cateid": "681d12c30817984228a5a979",
+            "name": "Relx 乐高积木 草莓",
+            "price": 20,
+            "priority": 4,
+            "dabaofei": 0,
+            "photo": "/wooli-images/087-346fab0744bd5c0a.jpeg"
+          },
+          {
+            "_id": "681d20920817984228a5a985",
+            "status": 1,
+            "cateid": "681d12c30817984228a5a979",
+            "name": "Relx 乐高积木 三重芒果",
+            "price": 20,
+            "priority": 3,
+            "dabaofei": 0,
+            "photo": "/wooli-images/088-6953a7cd784e08b0.jpeg"
+          },
+          {
+            "_id": "681d209a0817984228a5a986",
+            "status": 1,
+            "cateid": "681d12c30817984228a5a979",
+            "name": "Relx 乐高积木 可乐",
+            "price": 20,
+            "priority": 2,
+            "dabaofei": 0,
+            "photo": "/wooli-images/089-b91d74b2fdeaca1c.jpeg"
+          },
+          {
+            "_id": "681d20a10817984228a5a987",
+            "status": 1,
+            "cateid": "681d12c30817984228a5a979",
+            "name": "Relx 乐高积木 薄荷",
+            "price": 20,
+            "priority": 1,
+            "dabaofei": 0,
+            "photo": "/wooli-images/090-01ee9cfd039681ac.jpeg"
+          }
+        ]
+      },
+      {
+        "_id": "67f873a20dcd6c1b7db6cc57",
+        "name": "机器 烟杆",
+        "priority": 19,
+        "items": [
+          {
+            "_id": "67f873a20dcd6c1b7db6cc64",
+            "name": "Relx 六代烟杆 珍珠白（新）",
+            "price": 50,
+            "photo": "/wooli-images/091-72babd937b463031.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc57",
+            "dabaofei": 0,
+            "priority": 18
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc5f",
+            "name": "Relx 六代烟杆 黑色",
+            "price": 30,
+            "photo": "/wooli-images/092-543c39f30dfac98a.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc57",
+            "priority": 17,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc5d",
+            "name": "Relx 六代烟杆 绿色",
+            "price": 30,
+            "photo": "/wooli-images/093-cbf96174673e8cee.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc57",
+            "priority": 16,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc5e",
+            "name": "Relx 六代烟杆 紫色",
+            "price": 30,
+            "photo": "/wooli-images/094-1ff19a1ee650347c.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc57",
+            "priority": 15,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc60",
+            "name": "Relx 六代烟杆 灰色",
+            "price": 30,
+            "photo": "/wooli-images/095-75948d6f75e68e24.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc57",
+            "priority": 14,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc62",
+            "name": "Relx 六代烟杆 玫瑰金",
+            "price": 30,
+            "photo": "/wooli-images/096-d48b4933167dfdd7.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc57",
+            "priority": 13,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc61",
+            "name": "Relx 六代烟杆 蓝色",
+            "price": 30,
+            "photo": "/wooli-images/097-ad4b83a9a9c3667b.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc57",
+            "priority": 12,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc63",
+            "name": "Relx 六代烟杆 银色",
+            "price": 30,
+            "photo": "/wooli-images/098-c6a61937365198e4.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc57",
+            "priority": 11,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc58",
+            "name": "Relx 五代艺术家烟杆 黑镜（美版）",
+            "price": 50,
+            "photo": "/wooli-images/099-11f482aa6e6bd106.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc57",
+            "priority": 10,
+            "dabaofei": 0
+          },
+          {
+            "_id": "6859d31f0817984228a5aeb5",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc57",
+            "name": "Relx 五代艺术家烟杆 银镜（国版）",
+            "price": 35,
+            "photo": "/wooli-images/100-76bd04e1e65ff917.png",
+            "priority": 9
+          },
+          {
+            "_id": "6859d22f0817984228a5aeb4",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc57",
+            "name": "Ultra 一代烟杆 三档功率调节 适配relx icemax 冰熊 熊爪",
+            "photo": "/wooli-images/101-6b7931a738561318.jpeg",
+            "price": 25,
+            "priority": 1
+          }
+        ]
+      },
+      {
+        "_id": "67f873a20dcd6c1b7db6cc71",
+        "name": "Snowplus鸭嘴兽 一次性",
+        "priority": 18,
+        "items": [
+          {
+            "_id": "67f873a20dcd6c1b7db6cc86",
+            "name": "snowplus 一次性 椰子水",
+            "price": 15,
+            "photo": "/wooli-images/102-4dc48c1888c481e8.jpeg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 38,
+            "dabaofei": 0
+          },
+          {
+            "_id": "6839bf2f0817984228a5ab90",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "name": "snowplus 一次性 抹茶星冰乐",
+            "price": 15,
+            "priority": 37,
+            "dabaofei": 0,
+            "photo": "/wooli-images/103-000e3004efa67ac1.png"
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc74",
+            "name": "snowplus 一次性 青柠冰",
+            "price": 15,
+            "photo": "/wooli-images/104-76ca88c4f60746d1.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 36,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc72",
+            "name": "snowplus 一次性 可乐冰",
+            "price": 15,
+            "photo": "/wooli-images/105-9224bcfcd6ae733a.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 35,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc77",
+            "name": "snowplus 一次性 铁观音",
+            "price": 15,
+            "photo": "/wooli-images/106-8329a8cbf183e56f.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 34,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc7a",
+            "name": "snowplus 一次性 哈密瓜",
+            "price": 15,
+            "photo": "/wooli-images/107-b0a62f7785a310d4.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 33,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc78",
+            "name": "snowplus 一次性 茉莉龙井",
+            "price": 15,
+            "photo": "/wooli-images/108-2594ecc22583b42e.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 32,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc75",
+            "name": "snowplus 一次性 柠檬菠萝",
+            "price": 15,
+            "photo": "/wooli-images/109-7e6e37b7d8793eeb.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 31,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc7c",
+            "name": "snowplus 一次性 能量饮料",
+            "price": 15,
+            "photo": "/wooli-images/110-f283df17e6a3c581.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 29,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc7e",
+            "name": "snowplus 一次性 青提",
+            "price": 15,
+            "photo": "/wooli-images/111-984ceef686891875.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 28,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc80",
+            "name": "snowplus 一次性 绿豆",
+            "price": 15,
+            "photo": "/wooli-images/112-d1c9051ad7a434e3.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 27,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc73",
+            "name": "snowplus 一次性 百香果",
+            "price": 15,
+            "photo": "/wooli-images/113-daafbc8c4e53cb33.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 26,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc76",
+            "name": "snowplus 一次性 紫葡萄",
+            "price": 15,
+            "photo": "/wooli-images/114-1e04da6842b89123.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 25,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc7b",
+            "name": "snowplus 一次性 蜜桃味",
+            "price": 15,
+            "photo": "/wooli-images/115-63187615f95e7f41.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 24,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc79",
+            "name": "snowplus 一次性 红苹果",
+            "price": 15,
+            "photo": "/wooli-images/116-d9c67ca2431d5f55.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 23,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc7d",
+            "name": "snowplus 一次性 手打柠檬茶",
+            "price": 15,
+            "photo": "/wooli-images/117-68395317b509c311.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 22,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc7f",
+            "name": "snowplus 一次性 西瓜",
+            "price": 15,
+            "photo": "/wooli-images/118-c328b536aec2e39d.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 21,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc81",
+            "name": "snowplus 一次性 香芋",
+            "price": 15,
+            "photo": "/wooli-images/119-7b2471e9cb4b285f.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 20,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc82",
+            "name": "snowplus 一次性 荔枝",
+            "price": 15,
+            "photo": "/wooli-images/120-aa904c6a5a7bd34c.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 19,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc83",
+            "name": "snowplus 一次性 冰矿泉水",
+            "price": 15,
+            "photo": "/wooli-images/121-713754328f9ba81c.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 18,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc84",
+            "name": "snowplus 一次性 红酒",
+            "price": 15,
+            "photo": "/wooli-images/122-f9b312c341d36676.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 17,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc85",
+            "name": "snowplus 一次性 番石榴",
+            "price": 15,
+            "photo": "/wooli-images/123-bb7207e83190d997.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 16,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc88",
+            "name": "snowplus 一次性 老冰棍",
+            "price": 15,
+            "photo": "/wooli-images/124-5d80843c79ff2e42.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 15,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc89",
+            "name": "snowplus 一次性 香醇薄荷",
+            "price": 15,
+            "photo": "/wooli-images/125-e03d684999177752.jpeg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "priority": 14,
+            "dabaofei": 0
+          },
+          {
+            "_id": "681a50520817984228a5a8c8",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "name": "snowplus 一次性 南瓜",
+            "price": 15,
+            "photo": "/wooli-images/126-f383d1201969cbc0.png",
+            "priority": 13,
+            "dabaofei": 0
+          },
+          {
+            "_id": "681a51360817984228a5a8ca",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "name": "snowplus 一次性 金汤力",
+            "price": 15,
+            "photo": "/wooli-images/127-103a19a33205ae2b.png",
+            "priority": 12,
+            "dabaofei": 0
+          },
+          {
+            "_id": "681a51b20817984228a5a8cc",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "name": "snowplus 一次性 橘子汽水",
+            "price": 15,
+            "photo": "/wooli-images/128-6779f331e1c74311.png",
+            "priority": 11,
+            "dabaofei": 0
+          },
+          {
+            "_id": "6843393c0817984228a5ac55",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc71",
+            "name": "snowplus 一次性 冰红茶",
+            "photo": "/wooli-images/129-13b296a8859abc3a.jpeg",
+            "priority": 9,
+            "price": 15,
+            "dabaofei": 0
+          }
+        ]
+      },
+      {
+        "_id": "67f873a20dcd6c1b7db6cc66",
+        "name": "Icemax 一次性",
+        "priority": 17,
+        "items": [
+          {
+            "_id": "6859ba610817984228a5aeae",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "name": "icemax 一次性 椰子水",
+            "price": 15,
+            "photo": "/wooli-images/130-0b8cef3520ee092d.jpeg",
+            "priority": 14
+          },
+          {
+            "_id": "68d270f95feaeb50dd2edee4",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "name": "icemax 一次性 茉莉奶绿",
+            "price": 15,
+            "photo": "/wooli-images/131-390ce702ee8a2a57.jpeg",
+            "priority": 13
+          },
+          {
+            "_id": "6859ba7d0817984228a5aeb0",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "name": "icemax 一次性 猕猴桃",
+            "price": 15,
+            "photo": "/wooli-images/132-068467b909504c4c.jpeg",
+            "priority": 12
+          },
+          {
+            "_id": "68d271195feaeb50dd2edee6",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "name": "icemax 一次性 宝矿力",
+            "price": 15,
+            "photo": "/wooli-images/133-9ca15256a432eb9b.jpeg",
+            "priority": 11
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc69",
+            "name": "icemax 一次性 青提冰",
+            "price": 15,
+            "photo": "/wooli-images/134-a6e97f5c83372034.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "dabaofei": 0,
+            "priority": 10
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc67",
+            "name": "icemax 一次性 迈阿密薄荷",
+            "price": 15,
+            "photo": "/wooli-images/135-0c9ae764036d0ca2.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "dabaofei": 0,
+            "priority": 9
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc68",
+            "name": "icemax  一次性 龙井",
+            "price": 15,
+            "photo": "/wooli-images/136-8c629c9f4bdf970b.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "dabaofei": 0,
+            "priority": 8
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc6d",
+            "name": "icemax 一次性 荔枝冰",
+            "price": 15,
+            "photo": "/wooli-images/137-2b62e507d99474f5.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "dabaofei": 0,
+            "priority": 7
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc6a",
+            "name": "icemax 一次性 新鲜柠檬",
+            "price": 15,
+            "photo": "/wooli-images/138-8504d6f705171e4b.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "dabaofei": 0,
+            "priority": 6
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc6b",
+            "name": "icemax 一次性 蜜桃乌龙",
+            "price": 15,
+            "photo": "/wooli-images/139-c1155bbb15313d06.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "dabaofei": 0,
+            "priority": 5
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc6c",
+            "name": "icemax 一次性 百香果西柚",
+            "price": 15,
+            "photo": "/wooli-images/140-c0c919fc0b466db0.jpeg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "dabaofei": 0,
+            "priority": 4
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc6e",
+            "name": "icemax 一次性 柠檬菠萝",
+            "price": 15,
+            "photo": "/wooli-images/141-0d3929ebbe2821d0.jpeg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "dabaofei": 0,
+            "priority": 3
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc6f",
+            "name": "icemax 一次性 草莓冰",
+            "price": 15,
+            "photo": "/wooli-images/142-dcd2fa05afb49fb6.jpeg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "dabaofei": 0,
+            "priority": 2
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cc70",
+            "name": "icemax 一次性 西瓜冰",
+            "price": 15,
+            "photo": "/wooli-images/143-756d3bcf9f420329.png",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cc66",
+            "dabaofei": 0,
+            "priority": 1
+          }
+        ]
+      },
+      {
+        "_id": "67f873a20dcd6c1b7db6cc8a",
+        "name": "Relx MagicGo 一次性",
+        "priority": 16,
+        "items": [
+          {
+            "_id": "6855e2da0817984228a5ae39",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc8a",
+            "name": "新品·Relx MagicGo 4000一次性 买五送一🎉",
+            "price": 15,
+            "photo": "/wooli-images/144-757da61ab7686bcd.jpeg",
+            "priority": 0,
+            "dabaofei": 0
+          },
+          {
+            "_id": "6855e2f20817984228a5ae3a",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc8a",
+            "name": "Relx MagicGo 一次性 冷泡龙井",
+            "price": 15,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/145-6e0672df4aab264f.png"
+          },
+          {
+            "_id": "6855e2fb0817984228a5ae3b",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc8a",
+            "name": "Relx MagicGo 一次性 青提冰",
+            "price": 15,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/146-230c5a3944785c17.png"
+          },
+          {
+            "_id": "6855e3050817984228a5ae3c",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc8a",
+            "name": "Relx MagicGo 一次性 绿豆冰",
+            "price": 15,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/147-a35b696c1bb19a57.png"
+          },
+          {
+            "_id": "6855e30d0817984228a5ae3d",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc8a",
+            "name": "Relx MagicGo 一次性 冰镇可乐",
+            "price": 15,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/148-8ca1d1565b3b8a4f.png"
+          },
+          {
+            "_id": "6855e3140817984228a5ae3e",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc8a",
+            "name": "Relx MagicGo 一次性 香芋冰淇淋",
+            "price": 15,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/149-1d6f5fa52890f446.png"
+          },
+          {
+            "_id": "6855e31e0817984228a5ae3f",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc8a",
+            "name": "Relx MagicGo 一次性 冰镇椰子水",
+            "price": 15,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/150-dcb09f6f8bdbc620.png"
+          },
+          {
+            "_id": "6855e3450817984228a5ae40",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc8a",
+            "name": "Relx MagicGo 一次性 薄荷",
+            "price": 15,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/151-163dafa813a88942.png"
+          },
+          {
+            "_id": "6855e3560817984228a5ae41",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc8a",
+            "name": "Relx MagicGo 一次性 宝矿力",
+            "price": 15,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/152-06efe483b17998e3.png"
+          },
+          {
+            "_id": "6855e35e0817984228a5ae42",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc8a",
+            "name": "Relx MagicGo 一次性 冰镇西瓜",
+            "price": 15,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/153-10aeb1de54a62bbf.png"
+          },
+          {
+            "_id": "6855e3670817984228a5ae43",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cc8a",
+            "name": "Relx MagicGo 一次性 望山楂",
+            "price": 15,
+            "priority": 0,
+            "dabaofei": 0,
+            "photo": "/wooli-images/154-58c648c3e8b0ad92.jpeg"
+          }
+        ]
+      },
+      {
+        "_id": "6817c8770817984228a5a84b",
+        "status": 1,
+        "name": "Fronzen lab 烟弹 三颗装",
+        "priority": 14,
+        "items": [
+          {
+            "_id": "6817ca470817984228a5a84c",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 可乐冰",
+            "price": 15,
+            "priority": 15,
+            "dabaofei": 0,
+            "photo": "/wooli-images/155-75f57a4a081aa8cb.jpeg"
+          },
+          {
+            "_id": "6817ca900817984228a5a84f",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 紫葡晶萃酸冰",
+            "price": 15,
+            "priority": 14,
+            "dabaofei": 0,
+            "photo": "/wooli-images/156-8928ce7e4dc56110.jpeg"
+          },
+          {
+            "_id": "6817caac0817984228a5a850",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 宇治抹茶蜜语冰萃",
+            "price": 15,
+            "priority": 13,
+            "dabaofei": 0,
+            "photo": "/wooli-images/157-6db65e78ec83f441.jpeg"
+          },
+          {
+            "_id": "6817cab70817984228a5a851",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 青青芒果",
+            "price": 15,
+            "priority": 12,
+            "dabaofei": 0,
+            "photo": "/wooli-images/158-0a09616566855c35.jpeg"
+          },
+          {
+            "_id": "6817cac20817984228a5a852",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 冰番石榴",
+            "price": 15,
+            "priority": 11,
+            "dabaofei": 0,
+            "photo": "/wooli-images/159-56c0d4335e770000.jpeg"
+          },
+          {
+            "_id": "6817cae10817984228a5a854",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 青梅绿茶",
+            "price": 15,
+            "priority": 10,
+            "dabaofei": 0,
+            "photo": "/wooli-images/160-7ce2c84d52e85371.jpeg"
+          },
+          {
+            "_id": "6817cad70817984228a5a853",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 鸭屎香单枞",
+            "price": 15,
+            "priority": 9,
+            "dabaofei": 0,
+            "photo": "/wooli-images/161-e8adeacd6ec2ced4.jpeg"
+          },
+          {
+            "_id": "6817caec0817984228a5a855",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 樱花葡萄",
+            "price": 15,
+            "priority": 8,
+            "dabaofei": 0,
+            "photo": "/wooli-images/162-f10854df01360f54.jpeg"
+          },
+          {
+            "_id": "6817caf60817984228a5a856",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 桂花乌龙",
+            "price": 15,
+            "priority": 7,
+            "dabaofei": 0,
+            "photo": "/wooli-images/163-658559ce7d06c05a.jpeg"
+          },
+          {
+            "_id": "6817cb0f0817984228a5a857",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 冰果三重奏",
+            "price": 15,
+            "priority": 6,
+            "dabaofei": 0,
+            "photo": "/wooli-images/164-30b99f62fb5aaedc.jpeg"
+          },
+          {
+            "_id": "6817cb1a0817984228a5a859",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 黑加仑薄荷",
+            "price": 15,
+            "priority": 5,
+            "dabaofei": 0,
+            "photo": "/wooli-images/165-cb1e1f9ecd116cf1.jpeg"
+          },
+          {
+            "_id": "6817cb2b0817984228a5a85a",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 山楂",
+            "price": 15,
+            "priority": 4,
+            "dabaofei": 0,
+            "photo": "/wooli-images/166-23de9415d6baf3c4.jpeg"
+          },
+          {
+            "_id": "6817cb3a0817984228a5a85b",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 极寒冰",
+            "price": 15,
+            "priority": 3,
+            "dabaofei": 0,
+            "photo": "/wooli-images/167-b7212aa621215802.jpeg"
+          },
+          {
+            "_id": "6817cb450817984228a5a85c",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 极寒冰茶",
+            "price": 15,
+            "priority": 2,
+            "dabaofei": 0,
+            "photo": "/wooli-images/168-f7a53db82e2cadcd.jpeg"
+          },
+          {
+            "_id": "6817cdec0817984228a5a873",
+            "status": 1,
+            "cateid": "6817c8770817984228a5a84b",
+            "name": "Fronzen lab 菠萝乌龙冰",
+            "price": 15,
+            "priority": 1,
+            "dabaofei": 0,
+            "photo": "/wooli-images/169-64318e3419b7deae.jpeg"
+          }
+        ]
+      },
+      {
+        "_id": "67f873a20dcd6c1b7db6ccb3",
+        "name": "🇨🇳国烟 粗支",
+        "priority": 8,
+        "items": [
+          {
+            "_id": "67f873a20dcd6c1b7db6ccb4",
+            "name": "和天下",
+            "price": 240,
+            "photo": "/wooli-images/170-85b294505f5445cc.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "dabaofei": 0,
+            "priority": 41
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccb5",
+            "name": "黄鹤楼硬八度",
+            "price": 85,
+            "photo": "/wooli-images/171-39d7522b94980022.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 40,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccb6",
+            "name": "黄鹤楼1916",
+            "price": 270,
+            "photo": "/wooli-images/172-5cb36a57cc476518.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 39,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccb7",
+            "name": "软中华",
+            "price": 175,
+            "photo": "/wooli-images/173-c76c002852ea1d0a.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 38,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccb8",
+            "name": "上海双喜",
+            "price": 65,
+            "photo": "/wooli-images/174-90283c8a6bc92644.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 37,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccb9",
+            "name": "云烟大重九",
+            "price": 240,
+            "photo": "/wooli-images/175-8511252710a41834.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 36,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccba",
+            "name": "黄金叶天叶",
+            "price": 245,
+            "photo": "/wooli-images/176-04db01ba6ba0e956.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 35,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccbb",
+            "name": "黄鹤楼侠骨柔情",
+            "price": 125,
+            "photo": "/wooli-images/177-57a513014dbfb328.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 34,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccbc",
+            "name": "南京九五",
+            "price": 270,
+            "photo": "/wooli-images/178-f5452b42040e9c10.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 33,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccbd",
+            "name": "黄鹤楼软蓝",
+            "price": 78,
+            "photo": "/wooli-images/179-dd4a89959ab1986a.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 32,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccbe",
+            "name": "红南京",
+            "price": 70,
+            "photo": "/wooli-images/180-6576b348163ddb73.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 31,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccbf",
+            "name": "泰山望岳",
+            "price": 80,
+            "photo": "/wooli-images/181-c925c45c377618a0.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 30,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccc0",
+            "name": "黄鹤楼奇景",
+            "price": 95,
+            "photo": "/wooli-images/182-e6db7ed9f337b36c.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 29,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccc4",
+            "name": "玉溪",
+            "price": 80,
+            "photo": "/wooli-images/183-9bf1eaff404727be.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 28,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccc2",
+            "name": "小苏",
+            "price": 80,
+            "photo": "/wooli-images/184-47745206c8d8a45b.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 27,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccc5",
+            "name": "和谐玉溪",
+            "price": 115,
+            "photo": "/wooli-images/185-e15938c34d326bfe.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 26,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccc6",
+            "name": "108玉溪",
+            "price": 95,
+            "photo": "/wooli-images/186-b81ea5770e27963b.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 25,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccc1",
+            "name": "软珍品云",
+            "price": 85,
+            "photo": "/wooli-images/187-bd8b9239b457a430.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 24,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccc7",
+            "name": "黄鹤楼雅香金",
+            "price": 75,
+            "photo": "/wooli-images/188-760719d7d80d810e.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 23,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccc3",
+            "name": "大苏",
+            "price": "130",
+            "photo": "/wooli-images/189-245bc2819c681244.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 22
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccc8",
+            "name": "白色中南海",
+            "price": 60,
+            "photo": "/wooli-images/190-9c1eec51244e310e.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 21,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccc9",
+            "name": "荷花",
+            "price": "110",
+            "photo": "/wooli-images/191-eb98bca2b5f8c1ae.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 20
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccca",
+            "name": "黑兰州",
+            "price": 75,
+            "photo": "/wooli-images/192-f4b7dd484a7b77cc.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 19,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cccb",
+            "name": "硬中华",
+            "price": "125",
+            "photo": "/wooli-images/193-0f0e693bb93f4d23.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 18
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cccc",
+            "name": "灰狼",
+            "price": 80,
+            "photo": "/wooli-images/194-06fad7fa448e09e1.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 17,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cccd",
+            "name": "黄鹤楼雅韵",
+            "price": 90,
+            "photo": "/wooli-images/195-1b63e4b38526e708.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 16,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccce",
+            "name": "宽窄五粮液爆",
+            "price": "135",
+            "photo": "/wooli-images/196-9207f8530d6750f0.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 15
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cccf",
+            "name": "黄山 徽商",
+            "price": 140,
+            "photo": "/wooli-images/197-781b468fd5e4dbf0.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 14,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccd0",
+            "name": "国酒香30年",
+            "price": 225,
+            "photo": "/wooli-images/198-07631fdde4cc7422.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 13,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccd1",
+            "name": "利群软阳光",
+            "price": "110",
+            "photo": "/wooli-images/199-5f5a96c9d6d50180.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 12
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccd2",
+            "name": "蓝利群",
+            "price": 78,
+            "photo": "/wooli-images/200-a86901a97e1b2737.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 11,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccd3",
+            "name": "红方印",
+            "price": 100,
+            "photo": "/wooli-images/201-c121cbe43c74ef5a.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 10,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccd4",
+            "name": "黄金叶小目标",
+            "price": 73,
+            "photo": "/wooli-images/202-b57f4b22124a9cac.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 9,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccd5",
+            "name": "双喜1906",
+            "price": 75,
+            "photo": "/wooli-images/203-2cee00726da74412.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 8,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccd6",
+            "name": "硬金典双喜",
+            "price": 70,
+            "photo": "/wooli-images/204-6c29b1f290863676.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 7,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccd7",
+            "name": "经典100红塔山",
+            "price": 65,
+            "photo": "/wooli-images/205-dcf5d1c3b2d4e9d9.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 6,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccd8",
+            "name": "娇子X",
+            "price": 68,
+            "photo": "/wooli-images/206-ad157f8fcaceb882.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 5,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccd9",
+            "name": "真龙海韵",
+            "price": "120",
+            "photo": "/wooli-images/207-7db851c30ae0b01a.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 4
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccda",
+            "name": "牡丹333",
+            "price": 75,
+            "photo": "/wooli-images/208-4b11268e71c36f39.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 3,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccdb",
+            "name": "硬珍品黄鹤楼",
+            "price": 125,
+            "photo": "/wooli-images/209-ccfd3ae13ae8e459.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 2,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccdc",
+            "name": "硬蓝芙蓉王",
+            "price": 95,
+            "photo": "/wooli-images/210-82b918da012c65fb.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccb3",
+            "priority": 1,
+            "dabaofei": 0
+          }
+        ]
+      },
+      {
+        "_id": "67f873a20dcd6c1b7db6ccdd",
+        "name": "🇨🇳国烟 中支",
+        "priority": 7,
+        "items": [
+          {
+            "_id": "67f873a20dcd6c1b7db6cce1",
+            "name": "中南海蓝莓爆",
+            "price": 85,
+            "photo": "/wooli-images/211-d0d43babb7384be0.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccdd",
+            "dabaofei": 0,
+            "priority": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cce3",
+            "name": "七匹狼纯境",
+            "price": 80,
+            "photo": "/wooli-images/212-6436eecd2abab3ea.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccdd",
+            "dabaofei": 0,
+            "priority": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccde",
+            "name": "荷花中支",
+            "price": "140",
+            "photo": "/wooli-images/213-8b68e1d6f1163bbb.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccdd"
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccdf",
+            "name": "中华金中支",
+            "price": "240",
+            "photo": "/wooli-images/214-4c05e54b28d4969d.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccdd"
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cce0",
+            "name": "中华双中支",
+            "price": "175",
+            "photo": "/wooli-images/215-eacc73504ed35625.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccdd"
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cce2",
+            "name": "黄色钓鱼台",
+            "price": "140",
+            "photo": "/wooli-images/216-30783c42786065a2.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccdd"
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cce4",
+            "name": "黑兰州中支",
+            "price": "90",
+            "photo": "/wooli-images/217-921ac5e5335fb6da.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6ccdd"
+          }
+        ]
+      },
+      {
+        "_id": "67f873a20dcd6c1b7db6cce5",
+        "name": "🇨🇳国烟 细支",
+        "priority": 6,
+        "items": [
+          {
+            "_id": "67f873a20dcd6c1b7db6cce6",
+            "name": "黄鹤楼天下名楼",
+            "price": 70,
+            "photo": "/wooli-images/218-df1e2ccb9d5737ef.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "dabaofei": 0,
+            "priority": 28
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cce8",
+            "name": "泰山儒风细支",
+            "price": 90,
+            "photo": "/wooli-images/219-5befbb9f0bb163c0.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "dabaofei": 0,
+            "priority": 27
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cce9",
+            "name": "利群西子阳光细支",
+            "price": 95,
+            "photo": "/wooli-images/220-49759fd1c02f27ba.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "dabaofei": 0,
+            "priority": 26
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccea",
+            "name": "南京煊赫门（2024款）",
+            "price": 77,
+            "photo": "/wooli-images/221-7e58cf87c74bd3f5.jpeg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "dabaofei": 0,
+            "priority": 25
+          },
+          {
+            "_id": "68d57aab5feaeb50dd2edeed",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "name": "南京 炫赫门（炫彩）",
+            "price": 95,
+            "photo": "/wooli-images/222-4f3110949cb791d5.jpeg",
+            "priority": 24
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccec",
+            "name": "绿色十二钗",
+            "price": 80,
+            "photo": "/wooli-images/223-52b1f9524d7b83c6.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "dabaofei": 0,
+            "priority": 23
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccf2",
+            "name": "利群江南韵",
+            "price": 93,
+            "photo": "/wooli-images/224-a07e207d0b72cdbb.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "dabaofei": 0,
+            "priority": 22
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccf3",
+            "name": "细红方印",
+            "price": 78,
+            "photo": "/wooli-images/225-bbf1e9f5b53f59dc.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "dabaofei": 0,
+            "priority": 21
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccf4",
+            "name": "贵烟陈皮爆",
+            "price": 83,
+            "photo": "/wooli-images/226-bbc9082c5e20ae05.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "dabaofei": 0,
+            "priority": 20
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccf5",
+            "name": "细支1916黄鹤楼",
+            "price": 245,
+            "photo": "/wooli-images/227-18f54bc1158501d2.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "dabaofei": 0,
+            "priority": 19
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccf6",
+            "name": "南京大观园",
+            "price": 95,
+            "photo": "/wooli-images/228-3e47097ed2fb0615.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "dabaofei": 0,
+            "priority": 18
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccf9",
+            "name": "南京梦都",
+            "price": 78,
+            "photo": "/wooli-images/229-9a12abcaf83a7122.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "dabaofei": 0,
+            "priority": 17
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cce7",
+            "name": "黄鹤楼涡轮增压",
+            "price": "140",
+            "photo": "/wooli-images/230-eedf991ff55c8fd0.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 16
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cceb",
+            "name": "南京十二钗",
+            "price": "85",
+            "photo": "/wooli-images/231-9fefa9907f186c59.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 15
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cced",
+            "name": "南京雨花石",
+            "price": "145",
+            "photo": "/wooli-images/232-fa0c73fbeffd8332.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 14
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccee",
+            "name": "泰山茉莉香韵",
+            "price": "140",
+            "photo": "/wooli-images/233-547acf217347e3d1.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 13
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccef",
+            "name": "黄金叶天叶细支",
+            "price": "240",
+            "photo": "/wooli-images/234-5db2ca1373f8bae6.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 12
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccf0",
+            "name": "家园小熊猫",
+            "price": "80",
+            "photo": "/wooli-images/235-79a86c8e18fc8a9d.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 11
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccf1",
+            "name": "细荷花",
+            "price": "120",
+            "photo": "/wooli-images/236-19c283b55790a5da.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 10
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccf7",
+            "name": "蓝钓鱼台",
+            "price": "130",
+            "photo": "/wooli-images/237-f247ff2c6dd5a8e8.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 9
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccf8",
+            "name": "冬虫夏草",
+            "price": "120",
+            "photo": "/wooli-images/238-9cdbe0b2a2eae052.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 8
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccfb",
+            "name": "细和天下",
+            "price": "240",
+            "photo": "/wooli-images/239-0d0ce0a15705832c.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 7
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccfc",
+            "name": "细中华",
+            "price": "140",
+            "photo": "/wooli-images/240-06f7cd56472b4fb5.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 6
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccfd",
+            "name": "细支凤凰",
+            "price": "105",
+            "photo": "/wooli-images/241-f52bd0accf669b50.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 5
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccfe",
+            "name": "碧玉清溪",
+            "price": "85",
+            "photo": "/wooli-images/242-370d9622403379e5.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 4
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6ccff",
+            "name": "云烟黑金刚",
+            "price": "125",
+            "photo": "/wooli-images/243-81ab79bba6051bb9.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 3
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd00",
+            "name": "细支芙蓉王",
+            "price": "75",
+            "photo": "/wooli-images/244-96b3da3b764c1f70.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 2
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd01",
+            "name": "细支大重九",
+            "price": "160",
+            "photo": "/wooli-images/245-01d24c2bad4b8004.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cce5",
+            "priority": 1
+          }
+        ]
+      },
+      {
+        "_id": "67f873a20dcd6c1b7db6cd1a",
+        "name": "🇰🇷韩烟🚬",
+        "priority": 5,
+        "items": [
+          {
+            "_id": "67f873a30dcd6c1b7db6cd32",
+            "name": "Raison 酸奶 Yogo",
+            "price": 65,
+            "photo": "/wooli-images/246-9ea495787f92886c.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "priority": 40,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a30dcd6c1b7db6cd33",
+            "name": "Raison 红酒 French Black",
+            "price": 65,
+            "photo": "/wooli-images/247-c60e24e7e58b5904.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "priority": 39,
+            "dabaofei": 0
+          },
+          {
+            "_id": "6855e8e20817984228a5ae45",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "Raison 香草冰淇淋 Hyvva",
+            "price": 65,
+            "photo": "/wooli-images/248-04522182e5b3b86b.jpeg",
+            "priority": 38,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a30dcd6c1b7db6cd34",
+            "name": "Raison 橙子 Sun Presso",
+            "price": 65,
+            "photo": "/wooli-images/249-fe84f4aabcca653e.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "priority": 37,
+            "dabaofei": 0
+          },
+          {
+            "_id": "6855e9920817984228a5ae49",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "Raison 冰酒 French Cleo",
+            "photo": "/wooli-images/250-2f87cdb719bfe711.jpeg",
+            "priority": 36,
+            "price": 65,
+            "dabaofei": 0
+          },
+          {
+            "_id": "6855e9130817984228a5ae47",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "Raison 奶油 Ice Presso",
+            "price": 65,
+            "photo": "/wooli-images/251-173a7a281ec8aa96.jpeg",
+            "priority": 35
+          },
+          {
+            "_id": "6855ea450817984228a5ae55",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "Raison 苹果 AQUA GREEN",
+            "price": 65,
+            "photo": "/wooli-images/252-75e4c2997c810761.jpeg",
+            "priority": 34
+          },
+          {
+            "_id": "6855ea640817984228a5ae57",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "Raison 草莓 ISLAND PINK",
+            "price": 65,
+            "photo": "/wooli-images/253-9f730bae0a61d370.jpeg",
+            "priority": 33
+          },
+          {
+            "_id": "67f873a30dcd6c1b7db6cd31",
+            "name": "Raison 蜂蜜柚子双爆",
+            "price": 65,
+            "photo": "/wooli-images/254-5cfd2cbe5bb1c2fa.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "priority": 32,
+            "dabaofei": 0
+          },
+          {
+            "_id": "6855e9ce0817984228a5ae4d",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "Raison 蓝莓橙子双爆",
+            "photo": "/wooli-images/255-d8a46b0ab8f896ba.jpeg",
+            "price": 65,
+            "priority": 31
+          },
+          {
+            "_id": "6855e9b10817984228a5ae4b",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "Raison 蓝冰 Ice Blan",
+            "photo": "/wooli-images/256-4e083ff95c351796.jpeg",
+            "price": 65,
+            "priority": 30
+          },
+          {
+            "_id": "6855ea240817984228a5ae53",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "Raison 冰薄荷",
+            "photo": "/wooli-images/257-748dbaa37adf1319.jpeg",
+            "priority": 29,
+            "price": 65,
+            "dabaofei": 0
+          },
+          {
+            "_id": "6855ea040817984228a5ae4f",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "Raison POLA",
+            "photo": "/wooli-images/258-952078892c9f9119.jpeg",
+            "price": 65,
+            "priority": 28
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd2e",
+            "name": "韩国万宝路黑冰爆",
+            "price": 80,
+            "photo": "/wooli-images/259-446eb839e2a16270.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "priority": 27,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a30dcd6c1b7db6cd2f",
+            "name": "韩国万宝路草莓双爆",
+            "price": 80,
+            "photo": "/wooli-images/260-29beda6bf6da9af8.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "priority": 26,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a30dcd6c1b7db6cd30",
+            "name": "韩国万宝路薄荷双爆",
+            "price": 80,
+            "photo": "/wooli-images/261-7eb889b36f14676a.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "priority": 25,
+            "dabaofei": 0
+          },
+          {
+            "_id": "6855ea150817984228a5ae51",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "Raison BLACK",
+            "price": 65,
+            "photo": "/wooli-images/262-3c11a4e08198dcba.jpeg",
+            "priority": 24
+          },
+          {
+            "_id": "6855eda60817984228a5ae63",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "韩国万宝路西瓜双爆",
+            "price": 80,
+            "photo": "/wooli-images/263-23fe7ed366486d98.jpeg",
+            "priority": 23
+          },
+          {
+            "_id": "6855ede60817984228a5ae69",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "韩国万宝路樱花双爆",
+            "photo": "/wooli-images/264-e7322c5900521ce2.jpeg",
+            "price": 85,
+            "priority": 22
+          },
+          {
+            "_id": "6855edd30817984228a5ae67",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "韩国万宝路 紫葡萄单爆",
+            "price": 80,
+            "photo": "/wooli-images/265-4faf412d27f4937b.jpeg",
+            "priority": 21
+          },
+          {
+            "_id": "6855edbb0817984228a5ae65",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "name": "韩国万宝路 柑橘",
+            "photo": "/wooli-images/266-e223a8169cb0d5ad.jpeg",
+            "price": 80,
+            "priority": 20
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd2d",
+            "name": "韩国白万宝路",
+            "price": 72,
+            "photo": "/wooli-images/267-1ce5ee43f5817aca.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "priority": 19,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd22",
+            "name": "esse葡萄爆1mg",
+            "price": 62,
+            "photo": "/wooli-images/268-e311fca46bf5c0e1.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 18
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd1b",
+            "name": "七星香蕉双爆",
+            "price": 70,
+            "photo": "/wooli-images/269-cb37e0a5717ff536.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 17
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd1c",
+            "name": "韩版七星蓝莓",
+            "price": 72,
+            "photo": "/wooli-images/270-f173a2036ca4ecc5.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 16
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd2c",
+            "name": "韩国七星柠檬1mg",
+            "price": 66,
+            "photo": "/wooli-images/271-52427a927fd6ea27.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "priority": 15,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd2b",
+            "name": "韩国蓝七星",
+            "price": 70,
+            "photo": "/wooli-images/272-2ea69b79c547af6d.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "priority": 14,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd2a",
+            "name": "韩国白七星",
+            "price": 70,
+            "photo": "/wooli-images/273-1932aa79e7797188.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "priority": 13,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd1d",
+            "name": "esse橙子双爆",
+            "price": 62,
+            "photo": "/wooli-images/274-c727083c1fac46e6.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 12
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd1e",
+            "name": "esse薄荷爆4mg",
+            "price": 66,
+            "photo": "/wooli-images/275-485ad449d1640150.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 11
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd1f",
+            "name": "esse薄荷爆1mg",
+            "price": 66,
+            "photo": "/wooli-images/276-4e66fa2f6ba2e0b2.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 10
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd20",
+            "name": "esse芒果1mg",
+            "price": 62,
+            "photo": "/wooli-images/277-7146d8678478ed16.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 9
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd21",
+            "name": "esse葡萄酒双爆",
+            "price": 62,
+            "photo": "/wooli-images/278-bd9f8b6a1b76cae0.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 8
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd23",
+            "name": "esse喜马拉雅1mg",
+            "price": 62,
+            "photo": "/wooli-images/279-046e60be818c19ef.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 7
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd25",
+            "name": "esse红酒双爆",
+            "price": 62,
+            "photo": "/wooli-images/280-4048d7b454ac3ae3.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 6
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd24",
+            "name": "africa香蕉爆",
+            "price": 66,
+            "photo": "/wooli-images/281-8fe9608663aff5f4.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 5
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd26",
+            "name": "宝恒雪茄双爆",
+            "price": 66,
+            "photo": "/wooli-images/282-69e4b1bcbce8fbb5.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 4
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd27",
+            "name": "africa冰淇淋爆",
+            "price": 66,
+            "photo": "/wooli-images/283-8e82ff1bf32f1413.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 3
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd28",
+            "name": "africa随机爆",
+            "price": 66,
+            "photo": "/wooli-images/284-e446bb82bd2a5c2a.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 2
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd29",
+            "name": "宝恒莫吉托",
+            "price": 66,
+            "photo": "/wooli-images/285-7cf43307f0d770e0.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd1a",
+            "dabaofei": 0,
+            "priority": 1
+          }
+        ]
+      },
+      {
+        "_id": "67f873a20dcd6c1b7db6cd05",
+        "name": "🇯🇵日烟🚬",
+        "priority": 4,
+        "items": [
+          {
+            "_id": "67f873a20dcd6c1b7db6cd0a",
+            "name": "日本七星柠檬",
+            "price": 90,
+            "photo": "/wooli-images/286-56148ced6bba79f7.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "dabaofei": 0,
+            "priority": 28
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd07",
+            "name": "日本七星蓝莓",
+            "price": 90,
+            "photo": "/wooli-images/287-f4b971b821076495.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 27,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd11",
+            "name": "日本白七星14mg",
+            "price": 90,
+            "photo": "/wooli-images/288-25e41c1aff39f534.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 26,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd06",
+            "name": "kool蓝莓爆",
+            "price": 90,
+            "photo": "/wooli-images/289-b53c852c992777ef.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 25,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd08",
+            "name": "kent芒果",
+            "price": 90,
+            "photo": "/wooli-images/290-4e06761fb08d03b6.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 24,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd09",
+            "name": "kent杨梅",
+            "price": 90,
+            "photo": "/wooli-images/291-ea3f1ec3ffd9d90a.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 23,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd0b",
+            "name": "万宝路西瓜双爆",
+            "price": 90,
+            "photo": "/wooli-images/292-6703dfee9f21edd1.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 22,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd0c",
+            "name": "日本万宝路樱花爆",
+            "price": 90,
+            "photo": "/wooli-images/293-2d7c3ea2cecd614a.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 21,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd0d",
+            "name": "万宝路水蜜桃双爆",
+            "price": 90,
+            "photo": "/wooli-images/294-a804846b1b910774.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 20,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd0e",
+            "name": "万宝路百香果",
+            "price": 90,
+            "photo": "/wooli-images/295-cfbe8f8c6fde3b52.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 19,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd0f",
+            "name": "万宝路薄荷双爆",
+            "price": "90",
+            "photo": "/wooli-images/296-bfe04e44340b463f.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 18
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd10",
+            "name": "万宝路柑橘双爆",
+            "price": 90,
+            "photo": "/wooli-images/297-5174f8cfee71f4fb.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 17,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd12",
+            "name": "黄色软包和平",
+            "price": 90,
+            "photo": "/wooli-images/298-beaaaaaf9724f347.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 16,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd13",
+            "name": "黑色寿百年",
+            "price": 100,
+            "photo": "/wooli-images/299-146f35bf374757bd.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 15,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd14",
+            "name": "七彩寿百年",
+            "price": 100,
+            "photo": "/wooli-images/300-1bd2830b68344d9a.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 14,
+            "dabaofei": 0
+          },
+          {
+            "_id": "69156f285feaeb50dd2edf0f",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "name": "黑杰克 随机爆",
+            "price": 90,
+            "priority": 13,
+            "dabaofei": 0,
+            "photo": "/wooli-images/301-a0a84e47f7e2d3d5.png"
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd15",
+            "name": "黑杰克菠萝",
+            "price": 90,
+            "photo": "/wooli-images/302-1e082c7befd14b86.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 12,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd16",
+            "name": "黑杰克青柠",
+            "price": 90,
+            "photo": "/wooli-images/303-db4e1ca5be58385f.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 11,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd17",
+            "name": "黑杰克西柚",
+            "price": 90,
+            "photo": "/wooli-images/304-d557427d1ae4852c.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 10,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd18",
+            "name": "黑杰克柠檬",
+            "price": 90,
+            "photo": "/wooli-images/305-2c1f21a3ce4c507e.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 9,
+            "dabaofei": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd19",
+            "name": "骆驼洋梨爆",
+            "price": 90,
+            "photo": "/wooli-images/306-3f4223d8637509f1.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "priority": 8,
+            "dabaofei": 0
+          },
+          {
+            "_id": "6855ec0d0817984228a5ae5b",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "name": "卡比龙 金棕传奇7mg",
+            "photo": "/wooli-images/307-1cd1a99a88109921.jpeg",
+            "price": 280,
+            "priority": 7
+          },
+          {
+            "_id": "6855ec2a0817984228a5ae5d",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "name": "卡比龙 黑色总裁6mg（经典）",
+            "price": 280,
+            "photo": "/wooli-images/308-6f5f180b3f7ff12f.jpeg",
+            "priority": 6
+          },
+          {
+            "_id": "6855ec400817984228a5ae5f",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "name": "卡比龙 银狐5mg",
+            "photo": "/wooli-images/309-9a4c17e170e82e21.jpeg",
+            "price": 270,
+            "priority": 5
+          },
+          {
+            "_id": "69156e775feaeb50dd2edf07",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "name": "Peel 葡萄",
+            "price": 80,
+            "priority": 4,
+            "dabaofei": 0,
+            "photo": "/wooli-images/310-e8f348122d7b3db0.png"
+          },
+          {
+            "_id": "69156e825feaeb50dd2edf09",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "name": "Peel 橘子",
+            "price": 80,
+            "priority": 3,
+            "dabaofei": 0,
+            "photo": "/wooli-images/311-1cd877387c2afaa7.png"
+          },
+          {
+            "_id": "69156e8c5feaeb50dd2edf0a",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "name": "Peel 蜂蜜柚子",
+            "price": 80,
+            "priority": 2,
+            "dabaofei": 0,
+            "photo": "/wooli-images/312-edd525c1959bd29b.png"
+          },
+          {
+            "_id": "69156e955feaeb50dd2edf0b",
+            "status": 1,
+            "cateid": "67f873a20dcd6c1b7db6cd05",
+            "name": "Peel 酸奶",
+            "price": 80,
+            "priority": 1,
+            "dabaofei": 0,
+            "photo": "/wooli-images/313-491610c54ada9b58.png"
+          }
+        ]
+      },
+      {
+        "_id": "67f873a20dcd6c1b7db6cd02",
+        "name": "免税",
+        "priority": 3,
+        "items": [
+          {
+            "_id": "67f873a20dcd6c1b7db6cd03",
+            "name": "免税芙蓉王",
+            "price": 65,
+            "photo": "/wooli-images/314-5abbfd10ad352d16.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd02",
+            "dabaofei": 0,
+            "priority": 0
+          },
+          {
+            "_id": "67f873a20dcd6c1b7db6cd04",
+            "name": "免税中华5000",
+            "price": 65,
+            "photo": "/wooli-images/315-cf37a5ac39090226.jpg",
+            "skus": null,
+            "cateid": "67f873a20dcd6c1b7db6cd02",
+            "dabaofei": 0,
+            "priority": 0
+          }
+        ]
+      }
+    ],
+    "qrcode": {}
+  }
+}
