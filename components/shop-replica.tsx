@@ -232,6 +232,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
   const [selectedItem, setSelectedItem] = useState<ShopItem | null>(null);
   const [cartOpen, setCartOpen] = useState(false);
   const [checkoutOpen, setCheckoutOpen] = useState(false);
+  const [mobileCategoryOpen, setMobileCategoryOpen] = useState(false);
   const [snapshotSaving, setSnapshotSaving] = useState(false);
   const [checkoutForm, setCheckoutForm] = useState<CheckoutForm>({
     fulfillment: "shipping",
@@ -277,6 +278,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
 
   function selectCategory(categoryId: string) {
     setActiveCategory(categoryId);
+    setMobileCategoryOpen(false);
   }
 
   function updateCheckoutField(field: keyof CheckoutForm, value: string) {
@@ -583,20 +585,35 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
             </div>
           </div>
 
-          <div className="grid grid-cols-[92px_minmax(0,1fr)] gap-2 px-2 py-2 sm:gap-6 sm:px-5 sm:py-4 lg:grid-cols-[240px_minmax(0,1fr)]">
-            <aside className="sticky top-2 self-start lg:top-4">
+          <div className="grid gap-2 px-2 py-2 sm:gap-6 sm:px-5 sm:py-4 lg:grid-cols-[240px_minmax(0,1fr)]">
+            <aside className="relative lg:sticky lg:top-4 lg:self-start">
               <div className="rounded-[18px] border border-[#e0d4c1] bg-white/80 p-2 backdrop-blur sm:rounded-[24px] sm:p-3">
-                <div className="px-2 pb-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#9b7b59] sm:text-xs sm:tracking-[0.22em]">
-                  分类导航
-                </div>
-                <div className="space-y-2">
+                <button
+                  className="flex w-full items-center justify-between rounded-2xl bg-[#fbf8f2] px-3 py-2 text-left"
+                  onClick={() => setMobileCategoryOpen((open) => !open)}
+                  type="button"
+                >
+                  <div>
+                    <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#9b7b59] sm:text-xs sm:tracking-[0.22em]">
+                      分类导航
+                    </div>
+                    <div className="mt-1 text-xs font-semibold text-[#5f4937] lg:hidden">
+                      {displayedCategory?.name ?? "选择分类"}
+                    </div>
+                  </div>
+                  <span className="text-sm text-[#8f6234]">
+                    {mobileCategoryOpen ? "收起" : "展开"}
+                  </span>
+                </button>
+
+                <div className="mt-2 hidden lg:block lg:space-y-2">
                   {menu.map((category) => {
                     const isActive = category._id === activeCategory;
 
                     return (
                       <button
                         className={[
-                          "w-full rounded-2xl border px-2 py-2 text-left text-[11px] leading-4 transition sm:px-4 sm:py-3 sm:text-sm",
+                          "w-full rounded-2xl border px-4 py-3 text-left text-sm transition",
                           isActive
                             ? "border-[#8f6234] bg-[#8f6234] text-white shadow-[0_14px_34px_rgba(143,98,52,0.22)]"
                             : "border-[#eadfcd] bg-[#fbf8f2] text-[#5f4937] hover:border-[#c49a6c] hover:bg-white"
@@ -611,6 +628,32 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                   })}
                 </div>
               </div>
+
+              {mobileCategoryOpen ? (
+                <div className="absolute left-0 right-0 top-[calc(100%+8px)] z-20 rounded-[18px] border border-[#e0d4c1] bg-[#fffdf8]/95 p-2 shadow-[0_18px_40px_rgba(70,44,20,0.14)] backdrop-blur lg:hidden">
+                  <div className="max-h-[60vh] space-y-2 overflow-y-auto">
+                    {menu.map((category) => {
+                      const isActive = category._id === activeCategory;
+
+                      return (
+                        <button
+                          className={[
+                            "w-full rounded-2xl border px-3 py-2.5 text-left text-xs leading-4 transition",
+                            isActive
+                              ? "border-[#8f6234] bg-[#8f6234] text-white shadow-[0_14px_34px_rgba(143,98,52,0.22)]"
+                              : "border-[#eadfcd] bg-[#fbf8f2] text-[#5f4937]"
+                          ].join(" ")}
+                          key={category._id}
+                          onClick={() => selectCategory(category._id)}
+                          type="button"
+                        >
+                          {category.name}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              ) : null}
             </aside>
 
             <div className="space-y-6">
@@ -633,7 +676,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-2 sm:gap-4 xl:grid-cols-3">
+                    <div className="grid grid-cols-3 gap-2 sm:grid-cols-2 sm:gap-4 xl:grid-cols-3">
                       {displayedCategory.items.map((item) => {
                         const image = proxiedImage(item.photo, item.name);
                         const price = normalizePrice(item.price);
@@ -641,11 +684,11 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
 
                         return (
                           <article
-                            className="group flex h-full flex-col overflow-hidden rounded-[18px] border border-[#eee3d3] bg-[#fffdfa] sm:rounded-[24px]"
+                            className="group flex h-full flex-col overflow-hidden rounded-[16px] border border-[#eee3d3] bg-[#fffdfa] sm:rounded-[24px]"
                             key={item._id}
                           >
                             <button
-                              className="relative block aspect-[0.9] overflow-hidden bg-[#f2e7d8] sm:aspect-[4/3]"
+                              className="relative block aspect-[0.86] overflow-hidden bg-[#f2e7d8] sm:aspect-[4/3]"
                               onClick={() => setSelectedItem(item)}
                               type="button"
                             >
@@ -667,8 +710,8 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                               </div>
                             </button>
 
-                            <div className="flex flex-1 flex-col px-2 py-2 sm:px-4 sm:py-4">
-                              <h3 className="line-clamp-2 text-xs font-semibold leading-4 text-[#29180f] sm:text-base sm:leading-6">
+                            <div className="flex flex-1 flex-col px-1.5 py-2 sm:px-4 sm:py-4">
+                              <h3 className="line-clamp-2 text-[11px] font-semibold leading-3.5 text-[#29180f] sm:text-base sm:leading-6">
                                 {item.name}
                               </h3>
                               {item.desc ? (
@@ -677,29 +720,29 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                                 </p>
                               ) : null}
 
-                              <div className="mt-2 flex flex-col gap-1.5 sm:mt-4 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
+                              <div className="mt-1.5 flex flex-col gap-1 sm:mt-4 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                                 <div>
                                   <div className="text-[10px] uppercase tracking-[0.14em] text-[#a28463] sm:text-xs sm:tracking-[0.18em]">
                                     Price
                                   </div>
-                                  <div className="text-sm font-semibold text-[#8f6234] sm:text-xl">
+                                  <div className="text-xs font-semibold text-[#8f6234] sm:text-xl">
                                     {formatPrice(price, currency)}
                                   </div>
                                 </div>
 
                                 <div className="flex items-center justify-between gap-1 rounded-full border border-[#e7d7c2] bg-[#faf4eb] p-1">
                                   <button
-                                    className="h-6 w-6 rounded-full bg-white text-sm text-[#7d5730] transition hover:bg-[#f2e4d0] sm:h-9 sm:w-9 sm:text-lg"
+                                    className="h-5 w-5 rounded-full bg-white text-xs text-[#7d5730] transition hover:bg-[#f2e4d0] sm:h-9 sm:w-9 sm:text-lg"
                                     onClick={() => updateCount(item._id, -1)}
                                     type="button"
                                   >
                                     -
                                   </button>
-                                  <span className="min-w-4 text-center text-[11px] font-semibold text-[#4d3420] sm:min-w-8 sm:text-sm">
+                                  <span className="min-w-3 text-center text-[10px] font-semibold text-[#4d3420] sm:min-w-8 sm:text-sm">
                                     {count}
                                   </span>
                                   <button
-                                    className="h-6 w-6 rounded-full bg-[#8f6234] text-sm text-white transition hover:bg-[#754d26] sm:h-9 sm:w-9 sm:text-lg"
+                                    className="h-5 w-5 rounded-full bg-[#8f6234] text-xs text-white transition hover:bg-[#754d26] sm:h-9 sm:w-9 sm:text-lg"
                                     onClick={() => updateCount(item._id, 1)}
                                     type="button"
                                   >
