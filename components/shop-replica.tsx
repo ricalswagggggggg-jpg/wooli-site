@@ -1052,6 +1052,12 @@ export function ShopReplica({ menu, shop, initialCategoryId }: ShopReplicaProps)
                   >
                     美国电子烟网站怎么选
                   </Link>
+                  <Link
+                    href="/articles/north-america-vape-shop-nyc-disposable-guide"
+                    className="rounded-full border border-[#ede1d0] bg-[#fbf8f2] px-2.5 py-1 text-[10px] text-[#5c4735] transition hover:border-[#c79a64] hover:bg-white sm:text-xs"
+                  >
+                    北美电子烟怎么买
+                  </Link>
                 </div>
               </section>
             </div>
