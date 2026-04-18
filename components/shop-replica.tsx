@@ -1318,23 +1318,23 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
 
       <div className="fixed bottom-2 right-2 z-30 w-[min(300px,calc(100%-16px))] sm:bottom-4 sm:right-4 sm:w-[320px]">
         <div className="overflow-hidden rounded-[22px] border border-[#d7c4aa] bg-[#2f2014] text-white shadow-[0_24px_70px_rgba(47,32,20,0.35)] sm:rounded-[26px]">
-          <div className="flex justify-end px-3 py-3 sm:px-4 sm:py-4">
-            <div className="ml-auto w-full max-w-[230px] text-right">
-              <div className="text-[11px] uppercase tracking-[0.16em] text-[#d7bf9b]">
+          <div className="px-3 py-3 sm:px-4 sm:py-4">
+            <div className="w-full">
+              <div className="text-left text-[13px] font-semibold tracking-[0.06em] text-[#d7bf9b]">
                 购物车
               </div>
-              <div className="mt-1 text-sm font-semibold">
+              <div className="mt-2 text-center text-[15px] font-semibold">
                 {totalCount > 0
                   ? `${totalCount} 件商品 · ${formatPrice(totalPrice, currency)}`
                   : "还没有添加商品"}
               </div>
               {promoSummary.discount > 0 ? (
-                <div className="mt-1 text-xs text-[#f4d9a8]">
+                <div className="mt-1 text-center text-xs text-[#f4d9a8]">
                   已优惠 {formatPrice(promoSummary.discount, currency)}
                 </div>
               ) : null}
               <button
-                className="mt-2 ml-auto block w-full rounded-full bg-[#f4d9a8] px-3 py-2 text-sm font-semibold text-[#513516]"
+                className="mx-auto mt-2 block w-[82%] rounded-full bg-[#f4d9a8] px-3 py-1.5 text-sm font-semibold text-[#513516]"
                 onClick={openCheckout}
                 type="button"
               >
