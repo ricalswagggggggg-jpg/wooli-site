@@ -293,6 +293,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
   const [checkoutOpen, setCheckoutOpen] = useState(false);
   const [mobileCategoryOpen, setMobileCategoryOpen] = useState(false);
   const [snapshotSaving, setSnapshotSaving] = useState(false);
+  const [contactActionMessage, setContactActionMessage] = useState("");
   const checkoutScrollRef = useRef<HTMLDivElement | null>(null);
   const [checkoutForm, setCheckoutForm] = useState<CheckoutForm>({
     fulfillment: "shipping",
@@ -448,6 +449,26 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
   function addToCartAndClose(itemId: string) {
     updateCount(itemId, 1);
     setSelectedItem(null);
+  }
+
+  async function openWeChatContact() {
+    const wechatId = contactLink || "wulixiaopu-nyc";
+
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(wechatId);
+        setContactActionMessage("微信号已复制，正在尝试打开微信");
+      } else {
+        setContactActionMessage("请复制微信号后打开微信添加");
+      }
+    } catch {
+      setContactActionMessage("请复制微信号后打开微信添加");
+    }
+
+    window.location.href = "weixin://";
+    window.setTimeout(() => {
+      setContactActionMessage(`客服微信：${wechatId}`);
+    }, 1200);
   }
 
   function openCheckout() {
@@ -767,6 +788,18 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                   <div>客服微信</div>
                   <div className="font-semibold text-[#513516]">wulixiaopu-nyc</div>
                 </div>
+                <button
+                  className="mt-2 w-full rounded-full bg-[#8f6234] px-3 py-1.5 text-[10px] font-semibold text-white transition hover:bg-[#754d26] sm:text-xs"
+                  onClick={openWeChatContact}
+                  type="button"
+                >
+                  打开微信添加客服
+                </button>
+                {contactActionMessage ? (
+                  <div className="mt-1 text-[9px] leading-4 text-[#7a624d] sm:text-[10px]">
+                    {contactActionMessage}
+                  </div>
+                ) : null}
               </div>
             </div>
           </div>
