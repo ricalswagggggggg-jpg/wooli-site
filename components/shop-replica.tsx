@@ -1065,11 +1065,11 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
 
                     return (
                     <div
-                      className="rounded-[18px] border border-[#ece0cf] bg-[#fffaf2] px-2.5 py-2"
+                      className="rounded-[18px] border border-[#ece0cf] bg-[#fffaf2] px-2 py-2 sm:px-2.5"
                       key={entry.id}
                     >
-                      <div className="flex items-center gap-2">
-                        <div className="h-12 w-12 overflow-hidden rounded-xl bg-[#f1e7d9] sm:h-14 sm:w-14">
+                      <div className="flex items-start gap-1.5 sm:gap-2">
+                        <div className="h-10 w-10 overflow-hidden rounded-xl bg-[#f1e7d9] sm:h-14 sm:w-14">
                         {entry.item.photo ? (
                           <Image
                             alt={entry.item.name}
@@ -1081,10 +1081,10 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                         ) : null}
                       </div>
                       <div className="min-w-0 flex-1">
-                        <div className="truncate text-xs font-semibold text-[#2d1b0f] sm:text-sm">
+                        <div className="line-clamp-2 break-words text-[11px] font-semibold leading-4 text-[#2d1b0f] sm:text-sm">
                           {entry.cartLabel}
                         </div>
-                        <div className="mt-0.5 text-[11px] text-[#8a6844] sm:text-xs">
+                        <div className="mt-0.5 text-[10px] text-[#8a6844] sm:text-xs">
                           单价{" "}
                           {formatPrice(
                             freeCount >= entry.count ? 0 : entry.unitPrice,
@@ -1092,33 +1092,33 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                           )}
                         </div>
                         {freeCount > 0 ? (
-                          <div className="mt-0.5 text-[11px] font-semibold text-[#1f7a45] sm:text-xs">
+                          <div className="mt-0.5 text-[10px] font-semibold text-[#1f7a45] sm:text-xs">
                             赠送 {freeCount} 件
                           </div>
                         ) : null}
                       </div>
-                      <div className="text-right">
-                        <div className="text-xs font-semibold text-[#2d1b0f] sm:text-sm">
+                      <div className="min-w-[34px] text-right sm:min-w-[42px]">
+                        <div className="text-[11px] font-semibold text-[#2d1b0f] sm:text-sm">
                           x {entry.count}
                         </div>
-                        <div className="mt-0.5 text-xs text-[#8f6234] sm:text-sm">
+                        <div className="mt-0.5 text-[10px] text-[#8f6234] sm:text-sm">
                           {formatPrice(payableTotal, currency)}
                         </div>
                       </div>
                       </div>
-                      <div className="mt-2 flex items-center justify-end gap-1.5">
+                      <div className="mt-1.5 flex items-center justify-end gap-1">
                         <button
-                          className="h-7 w-7 rounded-full border border-[#e4d2bb] bg-white text-sm text-[#7b552d]"
+                          className="h-6 w-6 rounded-full border border-[#e4d2bb] bg-white text-xs text-[#7b552d] sm:h-7 sm:w-7 sm:text-sm"
                           onClick={() => updateCount(entry.id, -1)}
                           type="button"
                         >
                           -
                         </button>
-                        <span className="min-w-5 text-center text-xs font-semibold text-[#4d3420]">
+                        <span className="min-w-4 text-center text-[11px] font-semibold text-[#4d3420] sm:min-w-5 sm:text-xs">
                           {entry.count}
                         </span>
                         <button
-                          className="h-7 w-7 rounded-full bg-[#8f6234] text-sm text-white"
+                          className="h-6 w-6 rounded-full bg-[#8f6234] text-xs text-white sm:h-7 sm:w-7 sm:text-sm"
                           onClick={() => updateCount(entry.id, 1)}
                           type="button"
                         >
