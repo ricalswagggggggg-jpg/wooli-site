@@ -451,24 +451,19 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
     setSelectedItem(null);
   }
 
-  async function openWeChatContact() {
+  async function copyWeChatId() {
     const wechatId = contactLink || "wulixiaopu-nyc";
 
     try {
       if (navigator.clipboard?.writeText) {
         await navigator.clipboard.writeText(wechatId);
-        setContactActionMessage("微信号已复制，正在尝试打开微信");
+        setContactActionMessage(`已复制微信号：${wechatId}`);
       } else {
-        setContactActionMessage("请复制微信号后打开微信添加");
+        setContactActionMessage(`请手动复制微信号：${wechatId}`);
       }
     } catch {
-      setContactActionMessage("请复制微信号后打开微信添加");
+      setContactActionMessage(`请手动复制微信号：${wechatId}`);
     }
-
-    window.location.href = "weixin://";
-    window.setTimeout(() => {
-      setContactActionMessage(`客服微信：${wechatId}`);
-    }, 1200);
   }
 
   function openCheckout() {
@@ -790,10 +785,10 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                 </div>
                 <button
                   className="mt-2 w-full rounded-full bg-[#8f6234] px-3 py-1.5 text-[10px] font-semibold text-white transition hover:bg-[#754d26] sm:text-xs"
-                  onClick={openWeChatContact}
+                  onClick={copyWeChatId}
                   type="button"
                 >
-                  打开微信添加客服
+                  点击复制微信号
                 </button>
                 {contactActionMessage ? (
                   <div className="mt-1 text-[9px] leading-4 text-[#7a624d] sm:text-[10px]">
