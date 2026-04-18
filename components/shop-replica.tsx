@@ -148,6 +148,7 @@ function buildCartLabel(name: string, categoryName: string) {
       /^(Relx|RELX|Icemax|icemax|Icebomb|ICEBOMB|snowplus|Snowplus|SnowPlus)\s*/u,
       ""
     )
+    .replace(/^冰爆\s*/u, "")
     .replace(/^(MagicGo\s+)?(鸭嘴兽\s+)?一次性\s*/u, "")
     .trim();
   if (withoutCommonPrefix && withoutCommonPrefix !== normalized) {
