@@ -139,7 +139,7 @@ function buildCartLabel(name: string, categoryName: string) {
   }
 
   const withoutCategory = normalized.replace(cleanCategory, "").trim();
-  if (withoutCategory) {
+  if (withoutCategory && withoutCategory !== normalized) {
     return withoutCategory;
   }
 
