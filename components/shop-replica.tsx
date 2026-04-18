@@ -1236,7 +1236,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                   <div className="mt-2.5 space-y-1.5 text-xs text-[#f2e5d2] sm:text-sm">
                     <p>1. 核对购物车商品和数量</p>
                     <p>2. 选择{getFulfillmentLabel()}方式并填写信息</p>
-                    <p>3. 截图这个确认页面</p>
+                    <p>3. 点击确认订单并保存购物车截图</p>
                     <p>4. 添加客服并发送截图付款</p>
                   </div>
                   {promoSummary.tierDescriptions.length > 0 ? (
