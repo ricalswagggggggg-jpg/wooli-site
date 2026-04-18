@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 export type ShopItem = {
   _id: string;
@@ -271,6 +271,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
   const [checkoutOpen, setCheckoutOpen] = useState(false);
   const [mobileCategoryOpen, setMobileCategoryOpen] = useState(false);
   const [snapshotSaving, setSnapshotSaving] = useState(false);
+  const checkoutScrollRef = useRef<HTMLDivElement | null>(null);
   const [checkoutForm, setCheckoutForm] = useState<CheckoutForm>({
     fulfillment: "shipping",
     name: "",
@@ -296,16 +297,62 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
 
     if (!shouldLock) {
       document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.width = "";
       return;
     }
 
+    const scrollY = window.scrollY;
     const previousOverflow = document.body.style.overflow;
+    const previousPosition = document.body.style.position;
+    const previousTop = document.body.style.top;
+    const previousWidth = document.body.style.width;
     document.body.style.overflow = "hidden";
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = "100%";
 
     return () => {
       document.body.style.overflow = previousOverflow;
+      document.body.style.position = previousPosition;
+      document.body.style.top = previousTop;
+      document.body.style.width = previousWidth;
+      window.scrollTo(0, scrollY);
     };
   }, [checkoutOpen, selectedItem, mobileCategoryOpen]);
+
+  useEffect(() => {
+    if (!checkoutOpen) {
+      return;
+    }
+
+    function blockBackgroundScroll(event: TouchEvent | WheelEvent) {
+      const container = checkoutScrollRef.current;
+      const target = event.target;
+
+      if (!(target instanceof Node) || !container) {
+        event.preventDefault();
+        return;
+      }
+
+      if (!container.contains(target)) {
+        event.preventDefault();
+      }
+    }
+
+    document.addEventListener("touchmove", blockBackgroundScroll, {
+      passive: false
+    });
+    document.addEventListener("wheel", blockBackgroundScroll, {
+      passive: false
+    });
+
+    return () => {
+      document.removeEventListener("touchmove", blockBackgroundScroll);
+      document.removeEventListener("wheel", blockBackgroundScroll);
+    };
+  }, [checkoutOpen]);
 
   const contactLink = useMemo(() => {
     const match = shop.desc?.match(/客服微信[:：]\s*([^\s\n]+)/);
@@ -912,8 +959,8 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
       ) : null}
 
       {checkoutOpen ? (
-        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/55 p-4 sm:items-center">
-          <div className="max-h-[94vh] w-full max-w-[980px] overflow-hidden rounded-[30px] bg-[#fffdf8] shadow-[0_24px_80px_rgba(0,0,0,0.3)]">
+        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/55 p-4 touch-none sm:items-center">
+          <div className="max-h-[94vh] w-full max-w-[980px] overflow-hidden rounded-[30px] bg-[#fffdf8] shadow-[0_24px_80px_rgba(0,0,0,0.3)] touch-auto">
             <div className="flex items-center justify-between border-b border-[#eee2d2] px-4 py-3 sm:px-5">
               <div>
                 <div className="text-xs font-semibold uppercase tracking-[0.22em] text-[#a17a52]">
@@ -932,7 +979,10 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
               </button>
             </div>
 
-            <div className="grid max-h-[calc(94vh-76px)] gap-0 overflow-y-auto overscroll-contain lg:grid-cols-[1.35fr_0.8fr]">
+            <div
+              className="grid max-h-[calc(94vh-76px)] gap-0 overflow-y-auto overscroll-contain touch-pan-y lg:grid-cols-[1.35fr_0.8fr]"
+              ref={checkoutScrollRef}
+            >
               <div className="border-b border-[#eee2d2] p-4 lg:border-b-0 lg:border-r sm:p-5">
                 <div className="mb-3 flex items-center justify-between">
                   <div className="text-base font-semibold text-[#2d1b0f] sm:text-lg">
