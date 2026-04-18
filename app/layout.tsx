@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.wooli.me"),
   title: {
-    default: "雾里小铺 Wooli",
+    default: "雾里小铺 Wooli｜北美・纽约电子烟・Relx・Snowplus・Icemax・Icebomb",
     template: "%s | 雾里小铺 Wooli"
   },
   description:
