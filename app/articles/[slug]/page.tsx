@@ -121,6 +121,22 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
                   </p>
                 ))}
 
+                {section.internalLinks?.map((link) => (
+                  <p
+                    key={`${link.href}-${link.label}`}
+                    className="rounded-[18px] border border-[rgba(86,58,33,0.08)] bg-[#fff8ee] px-4 py-3 text-[14px] leading-7 text-[#5a4736] sm:text-[15px]"
+                  >
+                    <Link
+                      href={link.href}
+                      className="font-semibold text-[#7c5628] underline decoration-[#d0ae80] underline-offset-4 hover:text-[#5a3b1d]"
+                    >
+                      {link.label}
+                    </Link>
+                    {"："}
+                    {link.text}
+                  </p>
+                ))}
+
                 {section.bullets ? (
                   <ul className="space-y-3 rounded-[22px] border border-[rgba(86,58,33,0.08)] bg-[#fff8ee] p-5 text-[15px] leading-7 text-[#4f3d2e] sm:text-base">
                     {section.bullets.map((bullet) => (
@@ -146,6 +162,51 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
                 ) : null}
               </section>
             ))}
+          </div>
+
+          <div className="mt-10 space-y-6 border-t border-[rgba(86,58,33,0.1)] pt-8">
+            <section className="rounded-[24px] border border-[rgba(86,58,33,0.1)] bg-[#fff8ee] p-5">
+              <div className="text-xs font-semibold uppercase tracking-[0.26em] text-[#9d7a4f]">
+                Related Products
+              </div>
+              <h2 className="mt-2 text-2xl font-semibold text-[#2a1a12]">
+                相关商品推荐
+              </h2>
+              <p className="mt-2 text-sm leading-7 text-[#664f39]">
+                看完文章后，可以直接跳回对应类目开始选购，让文章页和商品页形成更自然的站内链接。
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2.5">
+                {article.relatedProducts.map((product) => (
+                  <Link
+                    key={product.href}
+                    href={product.href}
+                    className="inline-flex items-center justify-center rounded-full border border-[#d5c0a1] bg-white px-4 py-2 text-sm font-semibold text-[#5a3b1d] transition hover:border-[#b88b54] hover:bg-[#fff4df]"
+                  >
+                    {product.label}
+                  </Link>
+                ))}
+              </div>
+            </section>
+
+            <section className="rounded-[24px] border border-[rgba(86,58,33,0.1)] bg-[#fff8ee] p-5">
+              <div className="text-xs font-semibold uppercase tracking-[0.26em] text-[#9d7a4f]">
+                Related Articles
+              </div>
+              <h2 className="mt-2 text-2xl font-semibold text-[#2a1a12]">
+                延伸阅读
+              </h2>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                {article.relatedArticles.map((relatedArticle) => (
+                  <Link
+                    key={relatedArticle.href}
+                    href={relatedArticle.href}
+                    className="rounded-[18px] border border-[#e5d7c3] bg-white px-4 py-4 text-sm font-medium leading-6 text-[#4f3d2e] transition hover:border-[#c79a64] hover:bg-[#fffdf8]"
+                  >
+                    {relatedArticle.label}
+                  </Link>
+                ))}
+              </div>
+            </section>
           </div>
         </article>
 

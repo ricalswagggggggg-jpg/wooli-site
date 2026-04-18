@@ -39,6 +39,7 @@ type CheckoutForm = {
 type ShopReplicaProps = {
   menu: ShopCategory[];
   shop: ShopInfo;
+  initialCategoryId?: string;
 };
 
 type CartEntry = {
@@ -309,9 +310,10 @@ function getPayableTotal(entry: CartEntry, promoSummary: PromoSummary) {
   return Math.max(0, entry.total - getFreeCount(entry.id, promoSummary) * entry.unitPrice);
 }
 
-export function ShopReplica({ menu, shop }: ShopReplicaProps) {
+export function ShopReplica({ menu, shop, initialCategoryId }: ShopReplicaProps) {
   const [activeCategory, setActiveCategory] = useState(
-    menu.find((category) => category.name === "Relx 烟弹 极凉三颗装")?._id ??
+    initialCategoryId ??
+      menu.find((category) => category.name === "Relx 烟弹 极凉三颗装")?._id ??
       menu[0]?._id ??
       ""
   );

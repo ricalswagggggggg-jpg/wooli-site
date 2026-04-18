@@ -24,7 +24,13 @@ const ICEBOMB_CATEGORY: ShopCategory = {
   ]
 };
 
-export default function HomePage() {
+type HomePageProps = {
+  searchParams?: {
+    category?: string;
+  };
+};
+
+export default function HomePage({ searchParams }: HomePageProps) {
   const shop = (shopData.content?.shop ?? {
     name: "雾里小铺wooli",
     currency: "$"
@@ -48,5 +54,16 @@ export default function HomePage() {
     menu.push(ICEBOMB_CATEGORY);
   }
 
-  return <ShopReplica menu={menu} shop={shopWithCustomLogo} />;
+  const requestedCategory = searchParams?.category?.trim();
+  const initialCategoryId =
+    menu.find((category) => category.name === requestedCategory)?._id ??
+    undefined;
+
+  return (
+    <ShopReplica
+      initialCategoryId={initialCategoryId}
+      menu={menu}
+      shop={shopWithCustomLogo}
+    />
+  );
 }

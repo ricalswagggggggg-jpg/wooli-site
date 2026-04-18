@@ -3,6 +3,16 @@ export type SeoArticleSection = {
   paragraphs?: string[];
   bullets?: string[];
   steps?: string[];
+  internalLinks?: {
+    label: string;
+    href: string;
+    text: string;
+  }[];
+};
+
+export type SeoArticleLink = {
+  label: string;
+  href: string;
 };
 
 export type SeoArticle = {
@@ -15,6 +25,8 @@ export type SeoArticle = {
   publishedAt: string;
   readingTime: string;
   sections: SeoArticleSection[];
+  relatedProducts: SeoArticleLink[];
+  relatedArticles: SeoArticleLink[];
 };
 
 export const seoArticles: SeoArticle[] = [
@@ -34,6 +46,13 @@ export const seoArticles: SeoArticle[] = [
         paragraphs: [
           "很多用户第一次搜索“雾里小铺”“wooli电子烟”或者“wooli小铺”的时候，最常见的问题其实很直接：这个网站到底卖什么，怎么买，靠不靠谱。",
           "Wooli 雾里小铺是一个以电子烟、烟弹和一次性产品展示与选购为核心的网站。页面里可以直接查看不同类目的商品图片、价格和口味，挑选完成后加入购物车，再进入确认订单页面保存购物车截图，最后发送给客服完成确认。"
+        ],
+        internalLinks: [
+          {
+            label: "纽约电子烟哪里买",
+            href: "/articles/where-to-buy-vapes-in-nyc-wooli-guide",
+            text: "如果你更关心购买流程，可以继续看《纽约电子烟哪里买》这篇选购指南。"
+          }
         ]
       },
       {
@@ -43,6 +62,13 @@ export const seoArticles: SeoArticle[] = [
           "商品分类清楚：可以直接看 Relx 烟弹、Icemax、Snowplus、Icebomb 等不同类目，不需要来回聊天确认口味。",
           "购物车流程清晰：先加商品，再进入确认订单页面核对数量、价格和优惠活动，最后保存截图发给客服。",
           "配送方式明确：页面会直接展示纽约当天送和全美邮寄信息，让用户先知道流程再决定。"
+        ],
+        internalLinks: [
+          {
+            label: "Relx 烟弹",
+            href: "/?category=Relx%20%E7%83%9F%E5%BC%B9%20%E6%9E%81%E5%87%89%E4%B8%89%E9%A2%97%E8%A3%85",
+            text: "想直接看热卖商品，可以先回首页浏览 Relx 烟弹 极凉三颗装。"
+          }
         ]
       },
       {
@@ -51,6 +77,13 @@ export const seoArticles: SeoArticle[] = [
           "Relx 烟弹：适合已经知道自己常买口味的用户。",
           "Icemax / Icebomb / Snowplus 一次性：适合想看果味、清爽型口味的人。",
           "机器 / 烟杆：适合需要搭配设备的用户。"
+        ],
+        internalLinks: [
+          {
+            label: "美国电子烟网站怎么选",
+            href: "/articles/best-us-vape-website-buying-guide",
+            text: "如果你还在比较网站和配送方式，可以再看《美国电子烟网站怎么选》。"
+          }
         ]
       },
       {
@@ -59,6 +92,30 @@ export const seoArticles: SeoArticle[] = [
           "整体来说，Wooli 雾里小铺更像一个把电子烟选购流程整理得更清楚的网站。你不需要先和客服反复沟通口味、价格、数量，而是可以先在页面里自己整理购物车，再发送确认截图。",
           "如果你现在正准备找一个更顺手的纽约电子烟在线选购方式，可以直接从首页开始看商品分类，或者先添加客服微信做进一步确认。"
         ]
+      }
+    ],
+    relatedProducts: [
+      {
+        label: "Relx 烟弹 极凉三颗装",
+        href: "/?category=Relx%20%E7%83%9F%E5%BC%B9%20%E6%9E%81%E5%87%89%E4%B8%89%E9%A2%97%E8%A3%85"
+      },
+      {
+        label: "Icebomb 冰爆一次性",
+        href: "/?category=Icebomb%20%E5%86%B0%E7%88%86%E4%B8%80%E6%AC%A1%E6%80%A7"
+      },
+      {
+        label: "Icemax 一次性",
+        href: "/?category=Icemax%20%E4%B8%80%E6%AC%A1%E6%80%A7"
+      }
+    ],
+    relatedArticles: [
+      {
+        label: "纽约电子烟哪里买",
+        href: "/articles/where-to-buy-vapes-in-nyc-wooli-guide"
+      },
+      {
+        label: "美国电子烟网站怎么选",
+        href: "/articles/best-us-vape-website-buying-guide"
       }
     ]
   },
@@ -78,6 +135,13 @@ export const seoArticles: SeoArticle[] = [
         paragraphs: [
           "很多人在 Google 上搜索“纽约电子烟”的时候，真正想找的不是单纯一个品牌名字，而是一个更直接的问题：在纽约，到底哪里可以买到电子烟，而且流程最好不要太麻烦。",
           "如果你希望先看商品、再确认价格、最后联系人工客服，那么 Wooli 雾里小铺这种在线选购方式会更适合你。"
+        ],
+        internalLinks: [
+          {
+            label: "雾里小铺是什么",
+            href: "/articles/what-is-wooli-nyc-vape-shop-guide",
+            text: "如果你是第一次听到 Wooli，也可以先看《雾里小铺是什么》。"
+          }
         ]
       },
       {
@@ -85,6 +149,13 @@ export const seoArticles: SeoArticle[] = [
         paragraphs: [
           "和传统的“先发消息问有没有货”不同，网站已经把大部分信息整理成了商品分类。你可以先打开页面，查看不同类目，比如 Relx 烟弹、一次性电子烟、机器 / 烟杆等，然后把自己需要的口味和数量加入购物车。",
           "对于纽约用户来说，线上下单最大的优势其实是效率。一方面，你能先看到清晰的商品图片和价格，不用在聊天里一条条确认。另一方面，购物车确认页会把你选的口味、数量和总价整理出来，保存截图后直接发给客服，沟通成本会低很多。"
+        ],
+        internalLinks: [
+          {
+            label: "Snowplus 一次性",
+            href: "/?category=snowplus%20%E4%B8%80%E6%AC%A1%E6%80%A7",
+            text: "如果你偏好一次性产品，可以回首页先看 Snowplus 一次性口味。"
+          }
         ]
       },
       {
@@ -113,6 +184,30 @@ export const seoArticles: SeoArticle[] = [
           "如果你现在就在搜“纽约电子烟哪里买”，Wooli 这种先选品、后确认的方式会比只靠聊天询价更省时间。"
         ]
       }
+    ],
+    relatedProducts: [
+      {
+        label: "Relx 烟弹 极凉三颗装",
+        href: "/?category=Relx%20%E7%83%9F%E5%BC%B9%20%E6%9E%81%E5%87%89%E4%B8%89%E9%A2%97%E8%A3%85"
+      },
+      {
+        label: "snowplus 一次性",
+        href: "/?category=snowplus%20%E4%B8%80%E6%AC%A1%E6%80%A7"
+      },
+      {
+        label: "Icebomb 冰爆一次性",
+        href: "/?category=Icebomb%20%E5%86%B0%E7%88%86%E4%B8%80%E6%AC%A1%E6%80%A7"
+      }
+    ],
+    relatedArticles: [
+      {
+        label: "雾里小铺是什么",
+        href: "/articles/what-is-wooli-nyc-vape-shop-guide"
+      },
+      {
+        label: "美国电子烟网站怎么选",
+        href: "/articles/best-us-vape-website-buying-guide"
+      }
     ]
   },
   {
@@ -131,12 +226,26 @@ export const seoArticles: SeoArticle[] = [
         paragraphs: [
           "现在搜索“美国电子烟”“电子烟网站”“电子烟购买”的用户越来越多，大家想要的其实不只是“能买”，而是“能不能买得更省事”。",
           "一个好用的电子烟网站，通常至少要满足下面几个条件。"
+        ],
+        internalLinks: [
+          {
+            label: "纽约电子烟哪里买",
+            href: "/articles/where-to-buy-vapes-in-nyc-wooli-guide",
+            text: "如果你主要想解决纽约本地下单问题，可以继续看《纽约电子烟哪里买》。"
+          }
         ]
       },
       {
         heading: "商品展示清楚",
         paragraphs: [
           "如果网站只能看到模糊的分类，或者口味信息不完整，用户在选购时就很容易反复切换页面确认。相反，如果商品图片、价格和口味名称一目了然，购物效率会高很多。"
+        ],
+        internalLinks: [
+          {
+            label: "Icebomb 冰爆一次性",
+            href: "/?category=Icebomb%20%E5%86%B0%E7%88%86%E4%B8%80%E6%AC%A1%E6%80%A7",
+            text: "比如回首页点进 Icebomb 冰爆一次性，就能直接按口味筛选。"
+          }
         ]
       },
       {
@@ -165,6 +274,30 @@ export const seoArticles: SeoArticle[] = [
           "如果你现在正在找一个更适合日常复购的美国电子烟网站，最建议优先看是否有常买品牌、口味是否清晰、价格和优惠是否一眼能看懂，以及手机下单和联系客服流程是否顺手。",
           "这也是为什么越来越多用户在搜索“哪里可以买到电子烟”时，会更偏向可以先自己选品、再联系客服确认的网站。"
         ]
+      }
+    ],
+    relatedProducts: [
+      {
+        label: "Icemax 一次性",
+        href: "/?category=Icemax%20%E4%B8%80%E6%AC%A1%E6%80%A7"
+      },
+      {
+        label: "Icebomb 冰爆一次性",
+        href: "/?category=Icebomb%20%E5%86%B0%E7%88%86%E4%B8%80%E6%AC%A1%E6%80%A7"
+      },
+      {
+        label: "Relx 烟弹 极凉三颗装",
+        href: "/?category=Relx%20%E7%83%9F%E5%BC%B9%20%E6%9E%81%E5%87%89%E4%B8%89%E9%A2%97%E8%A3%85"
+      }
+    ],
+    relatedArticles: [
+      {
+        label: "雾里小铺是什么",
+        href: "/articles/what-is-wooli-nyc-vape-shop-guide"
+      },
+      {
+        label: "纽约电子烟哪里买",
+        href: "/articles/where-to-buy-vapes-in-nyc-wooli-guide"
       }
     ]
   }
