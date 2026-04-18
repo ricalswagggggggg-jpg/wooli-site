@@ -788,7 +788,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                   onClick={copyWeChatId}
                   type="button"
                 >
-                  点击复制微信号
+                  {contactActionMessage.startsWith("已复制") ? "已复制☑️" : "点击复制微信号"}
                 </button>
                 {contactActionMessage ? (
                   <div className="mt-1 text-[9px] leading-4 text-[#7a624d] sm:text-[10px]">
