@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   keywords: [
     "雾里小铺",
     "Wooli",
+    "wooli电子烟",
+    "wooli小铺",
+    "雾里电子烟",
     "电子烟",
     "纽约电子烟",
     "烟弹",
