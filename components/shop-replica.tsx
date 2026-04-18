@@ -445,6 +445,11 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
     setCart({});
   }
 
+  function addToCartAndClose(itemId: string) {
+    updateCount(itemId, 1);
+    setSelectedItem(null);
+  }
+
   function openCheckout() {
     if (totalCount === 0) {
       return;
@@ -1004,8 +1009,15 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                       -
                     </button>
                     <button
-                      className="h-10 rounded-full bg-[#8f6234] px-5 text-sm font-semibold text-white"
+                      className="h-10 w-10 rounded-full bg-[#f4d9a8] text-lg text-[#7b552d]"
                       onClick={() => updateCount(selectedItem._id, 1)}
+                      type="button"
+                    >
+                      +
+                    </button>
+                    <button
+                      className="h-10 rounded-full bg-[#8f6234] px-5 text-sm font-semibold text-white"
+                      onClick={() => addToCartAndClose(selectedItem._id)}
                       type="button"
                     >
                       加入购物车
