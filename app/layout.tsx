@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://wooli.me"),
+  metadataBase: new URL("https://www.wooli.me"),
   title: {
     default: "雾里小铺 Wooli",
     template: "%s | 雾里小铺 Wooli"
@@ -13,13 +13,22 @@ export const metadata: Metadata = {
     "雾里小铺",
     "Wooli",
     "电子烟",
+    "纽约电子烟",
     "烟弹",
     "一次性电子烟",
     "Relx",
     "Icemax",
     "Icebomb",
     "Snowplus",
-    "纽约电子烟",
+    "美国电子烟",
+    "vapor",
+    "vape near me",
+    "电子烟 附近",
+    "烟店",
+    "电子烟网站",
+    "电子烟购买",
+    "哪里买电子烟",
+    "哪里可以买到电子烟",
     "wooli.me"
   ],
   alternates: {
@@ -27,7 +36,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://wooli.me",
+    url: "https://www.wooli.me",
     siteName: "雾里小铺 Wooli",
     title: "雾里小铺 Wooli",
     description:

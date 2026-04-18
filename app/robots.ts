@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/"
     },
-    sitemap: "https://wooli.me/sitemap.xml",
-    host: "https://wooli.me"
+    sitemap: "https://www.wooli.me/sitemap.xml",
+    host: "https://www.wooli.me"
   };
 }

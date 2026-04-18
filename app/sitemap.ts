@@ -5,16 +5,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: "https://wooli.me",
-      lastModified: now,
-      changeFrequency: "daily",
-      priority: 1
-    },
-    {
       url: "https://www.wooli.me",
       lastModified: now,
       changeFrequency: "daily",
-      priority: 0.9
+      priority: 1
     }
   ];
 }
