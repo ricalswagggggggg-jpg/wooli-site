@@ -293,7 +293,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
   const [checkoutOpen, setCheckoutOpen] = useState(false);
   const [mobileCategoryOpen, setMobileCategoryOpen] = useState(false);
   const [snapshotSaving, setSnapshotSaving] = useState(false);
-  const [contactActionMessage, setContactActionMessage] = useState("");
+  const [wechatCopied, setWechatCopied] = useState(false);
   const checkoutScrollRef = useRef<HTMLDivElement | null>(null);
   const [checkoutForm, setCheckoutForm] = useState<CheckoutForm>({
     fulfillment: "shipping",
@@ -457,12 +457,12 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
     try {
       if (navigator.clipboard?.writeText) {
         await navigator.clipboard.writeText(wechatId);
-        setContactActionMessage(`已复制微信号：${wechatId}`);
+        setWechatCopied(true);
       } else {
-        setContactActionMessage(`请手动复制微信号：${wechatId}`);
+        setWechatCopied(false);
       }
     } catch {
-      setContactActionMessage(`请手动复制微信号：${wechatId}`);
+      setWechatCopied(false);
     }
   }
 
@@ -784,17 +784,21 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                   <div className="font-semibold text-[#513516]">wulixiaopu-nyc</div>
                 </div>
                 <button
-                  className="mt-2 w-full rounded-full bg-[#8f6234] px-3 py-1.5 text-[10px] font-semibold text-white transition hover:bg-[#754d26] sm:text-xs"
+                  className="mt-2 flex h-8 w-full items-center justify-center gap-1.5 rounded-full bg-[#8f6234] px-3 py-1.5 text-[10px] font-semibold text-white transition hover:bg-[#754d26] sm:h-9 sm:text-xs"
                   onClick={copyWeChatId}
                   type="button"
                 >
-                  {contactActionMessage.startsWith("已复制") ? "已复制☑️" : "点击复制微信号"}
+                  {wechatCopied ? (
+                    <>
+                      <span>已复制</span>
+                      <span className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-[#f4d9a8] text-[10px] text-[#6f4b28]">
+                        ✓
+                      </span>
+                    </>
+                  ) : (
+                    "点击复制微信号"
+                  )}
                 </button>
-                {contactActionMessage ? (
-                  <div className="mt-1 text-[9px] leading-4 text-[#7a624d] sm:text-[10px]">
-                    {contactActionMessage}
-                  </div>
-                ) : null}
               </div>
             </div>
           </div>
