@@ -46,6 +46,7 @@ type CartEntry = {
   item: ShopItem;
   unitPrice: number;
   total: number;
+  cartLabel: string;
 };
 
 type PromoAllocation = {
@@ -86,10 +87,12 @@ function formatPrice(price: number, currency = "$") {
 
 function buildCartIndex(cart: Record<string, number>, menu: ShopCategory[]) {
   const lookup = new Map<string, ShopItem>();
+  const categoryLookup = new Map<string, string>();
 
   menu.forEach((category) => {
     category.items.forEach((item) => {
       lookup.set(item._id, item);
+      categoryLookup.set(item._id, category.name);
     });
   });
 
@@ -105,10 +108,37 @@ function buildCartIndex(cart: Record<string, number>, menu: ShopCategory[]) {
         count,
         item,
         unitPrice,
-        total: unitPrice * count
+        total: unitPrice * count,
+        cartLabel: buildCartLabel(item.name, categoryLookup.get(id) ?? "")
       };
     })
     .filter(Boolean) as CartEntry[];
+}
+
+function buildCartLabel(name: string, categoryName: string) {
+  const normalized = name.replace(/^新品·/u, "").trim();
+
+  if (/机器|煙杆|烟杆|烟桿|machine|杆/i.test(normalized)) {
+    const withoutPrefix = normalized
+      .replace(/^.*?[）)]/u, "")
+      .replace(/^(Relx|RELX|Icemax|Icebomb|ICEBOMB)\s*/u, "")
+      .replace(/^(六代烟杆|五代艺术家烟杆|烟杆|一次性)\s*/u, "")
+      .trim();
+    return withoutPrefix || normalized;
+  }
+
+  const byParen = normalized.replace(/^.*?[）)]/u, "").trim();
+  if (byParen && byParen !== normalized) {
+    return byParen;
+  }
+
+  const withoutCategory = normalized.replace(categoryName, "").trim();
+  if (withoutCategory) {
+    return withoutCategory;
+  }
+
+  const segments = normalized.split(/\s+/u).filter(Boolean);
+  return segments.at(-1) ?? normalized;
 }
 
 function isMachineGiftCandidate(entry: CartEntry) {
@@ -937,7 +967,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                       </div>
                       <div className="min-w-0 flex-1">
                         <div className="truncate text-xs font-semibold text-[#2d1b0f] sm:text-sm">
-                          {entry.item.name}
+                          {entry.cartLabel}
                         </div>
                         <div className="mt-0.5 text-[11px] text-[#8a6844] sm:text-xs">
                           单价{" "}
@@ -1155,10 +1185,10 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
         </div>
       ) : null}
 
-      <div className="fixed bottom-2 right-2 z-30 w-[min(340px,calc(100%-16px))] sm:bottom-4 sm:right-4 sm:w-[360px]">
+      <div className="fixed bottom-2 right-2 z-30 w-[min(300px,calc(100%-16px))] sm:bottom-4 sm:right-4 sm:w-[320px]">
         <div className="overflow-hidden rounded-[22px] border border-[#d7c4aa] bg-[#2f2014] text-white shadow-[0_24px_70px_rgba(47,32,20,0.35)] sm:rounded-[26px]">
           <div className="flex justify-end px-3 py-3 sm:px-4 sm:py-4">
-            <div className="w-full max-w-[220px] text-right">
+            <div className="ml-auto w-full max-w-[230px] text-right">
               <div className="text-[11px] uppercase tracking-[0.16em] text-[#d7bf9b]">
                 购物车
               </div>
@@ -1173,7 +1203,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                 </div>
               ) : null}
               <button
-                className="mt-2 w-full rounded-full bg-[#f4d9a8] px-3 py-2 text-sm font-semibold text-[#513516]"
+                className="mt-2 ml-auto block w-full rounded-full bg-[#f4d9a8] px-3 py-2 text-sm font-semibold text-[#513516]"
                 onClick={openCheckout}
                 type="button"
               >

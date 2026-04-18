@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  overscroll-behavior-y: none;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
     linear-gradient(180deg, #f9f5ee 0%, #f3ebdf 52%, #efe4d5 100%);
   color: var(--text);
   font-family: "Avenir Next", "PingFang SC", "Helvetica Neue", sans-serif;
+  overscroll-behavior-y: none;
 }
 
 a {
