@@ -1015,9 +1015,9 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
       ) : null}
 
       {checkoutOpen ? (
-        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/55 p-4 touch-none sm:items-center">
-          <div className="max-h-[94vh] w-full max-w-[980px] overflow-hidden rounded-[30px] bg-[#fffdf8] shadow-[0_24px_80px_rgba(0,0,0,0.3)] touch-auto">
-            <div className="flex items-center justify-between border-b border-[#eee2d2] px-4 py-3 sm:px-5">
+        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/55 p-2 touch-none sm:p-4 sm:items-center">
+          <div className="flex h-[min(88dvh,820px)] w-full max-w-[980px] flex-col overflow-hidden rounded-[26px] bg-[#fffdf8] shadow-[0_24px_80px_rgba(0,0,0,0.3)] touch-auto sm:max-h-[94vh] sm:rounded-[30px]">
+            <div className="sticky top-0 z-10 flex items-center justify-between border-b border-[#eee2d2] bg-[#fffdf8] px-3 py-3 sm:px-5">
               <div>
                 <div className="text-xs font-semibold uppercase tracking-[0.22em] text-[#a17a52]">
                   Confirm Cart
@@ -1026,16 +1026,16 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                   确认购物车
                 </h3>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 sm:gap-2">
                 <button
-                  className="rounded-full border border-[#e4d2bb] px-4 py-2 text-sm text-[#765535]"
+                  className="rounded-full border border-[#e4d2bb] px-3 py-2 text-xs text-[#765535] sm:px-4 sm:text-sm"
                   onClick={clearCart}
                   type="button"
                 >
                   一键清空
                 </button>
                 <button
-                  className="rounded-full border border-[#e4d2bb] px-4 py-2 text-sm text-[#765535]"
+                  className="rounded-full border border-[#e4d2bb] px-3 py-2 text-xs text-[#765535] sm:px-4 sm:text-sm"
                   onClick={() => setCheckoutOpen(false)}
                   type="button"
                 >
@@ -1045,7 +1045,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
             </div>
 
             <div
-              className="grid max-h-[calc(94vh-76px)] gap-0 overflow-y-auto overscroll-contain touch-pan-y lg:grid-cols-[1.35fr_0.8fr]"
+              className="grid flex-1 gap-0 overflow-y-auto overscroll-contain touch-pan-y lg:grid-cols-[1.35fr_0.8fr]"
               ref={checkoutScrollRef}
             >
               <div className="border-b border-[#eee2d2] p-4 lg:border-b-0 lg:border-r sm:p-5">
