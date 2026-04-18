@@ -267,7 +267,11 @@ function getPayableTotal(entry: CartEntry, promoSummary: PromoSummary) {
 }
 
 export function ShopReplica({ menu, shop }: ShopReplicaProps) {
-  const [activeCategory, setActiveCategory] = useState(menu[0]?._id ?? "");
+  const [activeCategory, setActiveCategory] = useState(
+    menu.find((category) => category.name === "Relx 烟弹 极凉三颗装")?._id ??
+      menu[0]?._id ??
+      ""
+  );
   const [cart, setCart] = useState<Record<string, number>>({});
   const [selectedItem, setSelectedItem] = useState<ShopItem | null>(null);
   const [checkoutOpen, setCheckoutOpen] = useState(false);
