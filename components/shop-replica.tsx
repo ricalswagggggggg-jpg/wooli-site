@@ -49,6 +49,11 @@ type CartEntry = {
   cartLabel: string;
 };
 
+type ProductCardTitle = {
+  categoryLine: string;
+  flavorLine: string;
+};
+
 type PromoAllocation = {
   freeCount: number;
   machineGiftCount: number;
@@ -85,6 +90,27 @@ function normalizePrice(price: ShopItem["price"]) {
 
 function formatPrice(price: number, currency = "$") {
   return `${currency}${price.toFixed(2)}`;
+}
+
+function buildProductCardTitle(name: string, categoryName: string): ProductCardTitle {
+  const normalized = name.replace(/^新品·/u, "").trim();
+  const cleanCategory = categoryName
+    .replace(/[🌟✨🔥🚬🇯🇵]/gu, "")
+    .replace(/\s+/gu, " ")
+    .trim();
+
+  const flavorLine = buildCartLabel(normalized, cleanCategory);
+  let categoryLine = cleanCategory || normalized;
+
+  if (!categoryLine || categoryLine === flavorLine) {
+    const withoutFlavor = normalized.replace(flavorLine, "").trim();
+    categoryLine = withoutFlavor || normalized;
+  }
+
+  return {
+    categoryLine,
+    flavorLine
+  };
 }
 
 function buildCartIndex(cart: Record<string, number>, menu: ShopCategory[]) {
@@ -899,6 +925,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                         const image = proxiedImage(item.photo, item.name);
                         const price = normalizePrice(item.price);
                         const count = cart[item._id] ?? 0;
+                        const title = buildProductCardTitle(item.name, displayedCategory.name);
 
                         return (
                           <article
@@ -929,9 +956,14 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                             </button>
 
                             <div className="flex flex-1 flex-col px-1.5 py-2 sm:px-4 sm:py-4">
-                              <h3 className="line-clamp-2 text-[11px] font-semibold leading-3.5 text-[#29180f] sm:text-base sm:leading-6">
-                                {item.name}
-                              </h3>
+                              <div className="space-y-0.5">
+                                <div className="line-clamp-1 text-[10px] font-semibold leading-4 text-[#29180f] sm:text-[13px]">
+                                  {title.categoryLine}
+                                </div>
+                                <div className="line-clamp-1 text-[11px] font-semibold leading-4 text-[#29180f] sm:text-base sm:leading-6">
+                                  {title.flavorLine}
+                                </div>
+                              </div>
                               {item.desc ? (
                                 <p className="mt-1 hidden line-clamp-2 text-xs text-[#7a624d] sm:mt-2 sm:block sm:text-sm">
                                   {item.desc}
