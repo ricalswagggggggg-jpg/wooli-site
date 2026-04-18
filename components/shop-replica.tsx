@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 export type ShopItem = {
   _id: string;
@@ -226,11 +226,18 @@ function buildPromoSummary(cartItems: CartEntry[], currency: string): PromoSumma
   };
 }
 
+function getFreeCount(entryId: string, promoSummary: PromoSummary) {
+  return promoSummary.freeItemCounts[entryId] ?? 0;
+}
+
+function getPayableTotal(entry: CartEntry, promoSummary: PromoSummary) {
+  return Math.max(0, entry.total - getFreeCount(entry.id, promoSummary) * entry.unitPrice);
+}
+
 export function ShopReplica({ menu, shop }: ShopReplicaProps) {
   const [activeCategory, setActiveCategory] = useState(menu[0]?._id ?? "");
   const [cart, setCart] = useState<Record<string, number>>({});
   const [selectedItem, setSelectedItem] = useState<ShopItem | null>(null);
-  const [cartOpen, setCartOpen] = useState(false);
   const [checkoutOpen, setCheckoutOpen] = useState(false);
   const [mobileCategoryOpen, setMobileCategoryOpen] = useState(false);
   const [snapshotSaving, setSnapshotSaving] = useState(false);
@@ -252,6 +259,23 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
     [cartItems]
   );
   const totalPrice = promoSummary.finalTotal;
+
+  useEffect(() => {
+    const shouldLock =
+      checkoutOpen || Boolean(selectedItem) || mobileCategoryOpen;
+
+    if (!shouldLock) {
+      document.body.style.overflow = "";
+      return;
+    }
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [checkoutOpen, selectedItem, mobileCategoryOpen]);
 
   const contactLink = useMemo(() => {
     const match = shop.desc?.match(/客服微信[:：]\s*([^\s\n]+)/);
@@ -290,7 +314,6 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
 
   function openCheckout() {
     if (totalCount === 0) {
-      setCartOpen(true);
       return;
     }
 
@@ -394,6 +417,8 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
       (width - sidePadding * 2 - columnGap * (columns - 1)) / columns;
 
     cartItems.forEach((entry, index) => {
+      const payableTotal = getPayableTotal(entry, promoSummary);
+      const freeCount = getFreeCount(entry.id, promoSummary);
       const column = index % columns;
       const row = Math.floor(index / columns);
       const x = sidePadding + column * (cardWidth + columnGap);
@@ -414,15 +439,17 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
       context.fillStyle = "#8a6844";
       context.font = "20px Arial";
       context.fillText(
-        `单价 ${formatPrice(entry.unitPrice, currency)}`,
+        freeCount >= entry.count
+          ? `单价 ${formatPrice(0, currency)}`
+          : `单价 ${formatPrice(entry.unitPrice, currency)}`,
         x + 22,
         y + 64
       );
-      if ((promoSummary.freeItemCounts[entry.id] ?? 0) > 0) {
+      if (freeCount > 0) {
         context.fillStyle = "#1f7a45";
         context.font = "bold 18px Arial";
         context.fillText(
-          `赠送 ${promoSummary.freeItemCounts[entry.id]} 件`,
+          `赠送 ${freeCount} 件`,
           x + 22,
           y + 88
         );
@@ -433,7 +460,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
       context.textAlign = "right";
       context.fillText(`x${entry.count}`, x + cardWidth - 22, y + 34);
       context.fillText(
-        formatPrice(entry.total, currency),
+        formatPrice(payableTotal, currency),
         x + cardWidth - 22,
         y + 64
       );
@@ -875,7 +902,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
               </button>
             </div>
 
-            <div className="grid max-h-[calc(94vh-76px)] gap-0 overflow-y-auto lg:grid-cols-[1.35fr_0.8fr]">
+            <div className="grid max-h-[calc(94vh-76px)] gap-0 overflow-y-auto overscroll-contain lg:grid-cols-[1.35fr_0.8fr]">
               <div className="border-b border-[#eee2d2] p-4 lg:border-b-0 lg:border-r sm:p-5">
                 <div className="mb-3 flex items-center justify-between">
                   <div className="text-base font-semibold text-[#2d1b0f] sm:text-lg">
@@ -886,13 +913,18 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                   </div>
                 </div>
 
-                <div className="grid gap-2 sm:grid-cols-2">
-                  {cartItems.map((entry) => (
+                <div className="grid grid-cols-2 gap-2">
+                  {cartItems.map((entry) => {
+                    const freeCount = getFreeCount(entry.id, promoSummary);
+                    const payableTotal = getPayableTotal(entry, promoSummary);
+
+                    return (
                     <div
-                      className="flex items-center gap-2 rounded-[18px] border border-[#ece0cf] bg-[#fffaf2] px-2.5 py-2"
+                      className="rounded-[18px] border border-[#ece0cf] bg-[#fffaf2] px-2.5 py-2"
                       key={entry.id}
                     >
-                      <div className="h-12 w-12 overflow-hidden rounded-xl bg-[#f1e7d9] sm:h-14 sm:w-14">
+                      <div className="flex items-center gap-2">
+                        <div className="h-12 w-12 overflow-hidden rounded-xl bg-[#f1e7d9] sm:h-14 sm:w-14">
                         {entry.item.photo ? (
                           <Image
                             alt={entry.item.name}
@@ -908,11 +940,15 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                           {entry.item.name}
                         </div>
                         <div className="mt-0.5 text-[11px] text-[#8a6844] sm:text-xs">
-                          单价 {formatPrice(entry.unitPrice, currency)}
+                          单价{" "}
+                          {formatPrice(
+                            freeCount >= entry.count ? 0 : entry.unitPrice,
+                            currency
+                          )}
                         </div>
-                        {(promoSummary.freeItemCounts[entry.id] ?? 0) > 0 ? (
+                        {freeCount > 0 ? (
                           <div className="mt-0.5 text-[11px] font-semibold text-[#1f7a45] sm:text-xs">
-                            赠送 {promoSummary.freeItemCounts[entry.id]} 件
+                            赠送 {freeCount} 件
                           </div>
                         ) : null}
                       </div>
@@ -921,11 +957,31 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                           x {entry.count}
                         </div>
                         <div className="mt-0.5 text-xs text-[#8f6234] sm:text-sm">
-                          {formatPrice(entry.total, currency)}
+                          {formatPrice(payableTotal, currency)}
                         </div>
                       </div>
+                      </div>
+                      <div className="mt-2 flex items-center justify-end gap-1.5">
+                        <button
+                          className="h-7 w-7 rounded-full border border-[#e4d2bb] bg-white text-sm text-[#7b552d]"
+                          onClick={() => updateCount(entry.id, -1)}
+                          type="button"
+                        >
+                          -
+                        </button>
+                        <span className="min-w-5 text-center text-xs font-semibold text-[#4d3420]">
+                          {entry.count}
+                        </span>
+                        <button
+                          className="h-7 w-7 rounded-full bg-[#8f6234] text-sm text-white"
+                          onClick={() => updateCount(entry.id, 1)}
+                          type="button"
+                        >
+                          +
+                        </button>
+                      </div>
                     </div>
-                  ))}
+                  )})}
                 </div>
 
                 <div className="mt-3 rounded-[20px] border border-[#e8dccd] bg-[#faf4eb] p-3">
@@ -1099,40 +1155,25 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
         </div>
       ) : null}
 
-      <div className="fixed bottom-2 left-1/2 z-30 w-[min(960px,calc(100%-12px))] -translate-x-1/2 sm:bottom-4 sm:w-[min(960px,calc(100%-24px))]">
+      <div className="fixed bottom-2 right-2 z-30 w-[min(340px,calc(100%-16px))] sm:bottom-4 sm:right-4 sm:w-[360px]">
         <div className="overflow-hidden rounded-[22px] border border-[#d7c4aa] bg-[#2f2014] text-white shadow-[0_24px_70px_rgba(47,32,20,0.35)] sm:rounded-[26px]">
-          <div className="flex flex-col gap-2 px-3 py-2.5 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-5 sm:py-4">
-            <div className="min-w-0">
-              <div className="text-[11px] uppercase tracking-[0.16em] text-[#d7bf9b] sm:text-xs sm:tracking-[0.2em]">
+          <div className="flex justify-end px-3 py-3 sm:px-4 sm:py-4">
+            <div className="w-full max-w-[220px] text-right">
+              <div className="text-[11px] uppercase tracking-[0.16em] text-[#d7bf9b]">
                 购物车
               </div>
-              <div className="mt-0.5 truncate text-sm font-semibold sm:text-lg">
+              <div className="mt-1 text-sm font-semibold">
                 {totalCount > 0
                   ? `${totalCount} 件商品 · ${formatPrice(totalPrice, currency)}`
                   : "还没有添加商品"}
               </div>
               {promoSummary.discount > 0 ? (
-                <div className="mt-1 text-xs text-[#f4d9a8] sm:text-sm">
+                <div className="mt-1 text-xs text-[#f4d9a8]">
                   已优惠 {formatPrice(promoSummary.discount, currency)}
                 </div>
               ) : null}
-              {shop.tips ? (
-                <div className="mt-1 hidden line-clamp-2 text-xs text-[#ead9c1] sm:block sm:text-sm">
-                  {shop.tips}
-                </div>
-              ) : null}
-            </div>
-
-            <div className="grid grid-cols-2 gap-2 sm:flex sm:gap-3">
               <button
-                className="rounded-full border border-white/20 px-3 py-2 text-xs font-semibold text-white/90 transition hover:bg-white/10 sm:px-5 sm:py-3 sm:text-sm"
-                onClick={() => setCartOpen((open) => !open)}
-                type="button"
-              >
-                {cartOpen ? "收起清单" : "查看清单"}
-              </button>
-              <button
-                className="rounded-full bg-[#f4d9a8] px-3 py-2 text-xs font-semibold text-[#513516] sm:px-5 sm:py-3 sm:text-sm"
+                className="mt-2 w-full rounded-full bg-[#f4d9a8] px-3 py-2 text-sm font-semibold text-[#513516]"
                 onClick={openCheckout}
                 type="button"
               >
@@ -1140,83 +1181,6 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
               </button>
             </div>
           </div>
-
-          {cartOpen ? (
-            <div className="border-t border-white/10 bg-[#3a2718] px-4 py-3.5 sm:px-5 sm:py-4">
-              {cartItems.length > 0 ? (
-                <div className="grid gap-3">
-                  {cartItems.map((entry) => (
-                    <div
-                      className="grid grid-cols-[48px_minmax(0,1fr)_auto] items-center gap-2.5 rounded-[18px] border border-white/10 bg-white/5 px-3 py-3 sm:flex sm:gap-3 sm:rounded-[20px]"
-                      key={entry.id}
-                    >
-                      <div className="h-12 w-12 overflow-hidden rounded-xl bg-white/10 sm:h-14 sm:w-14 sm:rounded-2xl">
-                        {entry.item.photo ? (
-                          <Image
-                            alt={entry.item.name}
-                            className="h-full w-full object-cover"
-                            height={56}
-                            src={proxiedImage(entry.item.photo, entry.item.name)}
-                            width={56}
-                          />
-                        ) : null}
-                      </div>
-
-                      <div className="min-w-0 flex-1">
-                        <div className="truncate text-xs font-semibold text-white sm:text-sm">
-                          {entry.item.name}
-                        </div>
-                        <div className="text-[11px] text-[#d8c4a7] sm:text-xs">
-                          单价 {formatPrice(entry.unitPrice, currency)}
-                        </div>
-                        {(promoSummary.freeItemCounts[entry.id] ?? 0) > 0 ? (
-                          <div className="text-[11px] font-semibold text-[#f4d9a8] sm:text-xs">
-                            赠送 {promoSummary.freeItemCounts[entry.id]} 件
-                          </div>
-                        ) : null}
-                      </div>
-
-                      <div className="col-span-2 flex items-center gap-2 sm:col-auto">
-                        <button
-                          className="h-8 w-8 rounded-full bg-white/10"
-                          onClick={() => updateCount(entry.id, -1)}
-                          type="button"
-                        >
-                          -
-                        </button>
-                        <span className="min-w-6 text-center text-sm font-semibold">
-                          {entry.count}
-                        </span>
-                        <button
-                          className="h-8 w-8 rounded-full bg-[#f4d9a8] text-[#513516]"
-                          onClick={() => updateCount(entry.id, 1)}
-                          type="button"
-                        >
-                          +
-                        </button>
-                      </div>
-
-                      <div className="w-auto text-right text-xs font-semibold text-[#f6ddb2] sm:w-24 sm:text-sm">
-                        {formatPrice(entry.total, currency)}
-                      </div>
-                    </div>
-                  ))}
-                  {promoSummary.discount > 0 ? (
-                    <div className="mt-2 flex items-center justify-between rounded-[18px] border border-[#f4d9a8]/30 bg-[#f4d9a8]/10 px-4 py-3 text-sm">
-                      <span className="text-[#f5e6cf]">优惠减免</span>
-                      <span className="font-semibold text-[#f4d9a8]">
-                        -{formatPrice(promoSummary.discount, currency)}
-                      </span>
-                    </div>
-                  ) : null}
-                </div>
-              ) : (
-                <div className="rounded-[20px] border border-dashed border-white/15 px-4 py-8 text-center text-sm text-[#dbc8af]">
-                  购物车还是空的，先从上面选择商品吧。
-                </div>
-              )}
-            </div>
-          ) : null}
         </div>
       </div>
     </main>
