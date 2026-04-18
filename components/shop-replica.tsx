@@ -62,6 +62,8 @@ type PromoSummary = {
   tierDescriptions: string[];
 };
 
+const CART_STORAGE_KEY = "wooli-cart";
+
 function proxiedImage(src?: string, label?: string) {
   if (!src) return "";
   if (src.startsWith("/") && !src.startsWith("/photo/")) return src;
@@ -292,6 +294,36 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
   const totalPrice = promoSummary.finalTotal;
 
   useEffect(() => {
+    try {
+      const rawCart = window.localStorage.getItem(CART_STORAGE_KEY);
+      if (!rawCart) {
+        return;
+      }
+
+      const parsedCart = JSON.parse(rawCart) as Record<string, number>;
+      if (parsedCart && typeof parsedCart === "object") {
+        const sanitized = Object.fromEntries(
+          Object.entries(parsedCart).filter(
+            ([, count]) => Number.isFinite(count) && count > 0
+          )
+        );
+        setCart(sanitized);
+      }
+    } catch {
+      window.localStorage.removeItem(CART_STORAGE_KEY);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (Object.keys(cart).length === 0) {
+      window.localStorage.removeItem(CART_STORAGE_KEY);
+      return;
+    }
+
+    window.localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+  }, [cart]);
+
+  useEffect(() => {
     const shouldLock =
       checkoutOpen || Boolean(selectedItem) || mobileCategoryOpen;
 
@@ -387,6 +419,10 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
       ...current,
       [field]: value
     }));
+  }
+
+  function clearCart() {
+    setCart({});
   }
 
   function openCheckout() {
@@ -970,13 +1006,22 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                   确认购物车
                 </h3>
               </div>
-              <button
-                className="rounded-full border border-[#e4d2bb] px-4 py-2 text-sm text-[#765535]"
-                onClick={() => setCheckoutOpen(false)}
-                type="button"
-              >
-                关闭
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  className="rounded-full border border-[#e4d2bb] px-4 py-2 text-sm text-[#765535]"
+                  onClick={clearCart}
+                  type="button"
+                >
+                  一键清空
+                </button>
+                <button
+                  className="rounded-full border border-[#e4d2bb] px-4 py-2 text-sm text-[#765535]"
+                  onClick={() => setCheckoutOpen(false)}
+                  type="button"
+                >
+                  关闭
+                </button>
+              </div>
             </div>
 
             <div
