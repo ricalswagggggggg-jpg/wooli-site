@@ -700,6 +700,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
 
   const currency = shop.currency || "$";
   const logo = proxiedImage(shop.logo, shop.name);
+  const customerServiceQr = "/customer-service-qr.jpg";
 
   return (
     <main className="min-h-screen bg-[#f6f2ea] pb-28 text-[#231815] sm:pb-28">
@@ -723,7 +724,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                 )}
               </div>
 
-              <div className="flex-1">
+              <div className="min-w-0 flex-1">
                 <div className="mb-2 inline-flex max-w-full rounded-full border border-[#d1bb9b] bg-[#fff8ec] px-2.5 py-1 text-[10px] font-semibold tracking-[0.14em] text-[#8d6335] sm:px-3 sm:text-xs sm:tracking-[0.18em]">
                   贩卖人间烟火·万物皆可爱
                 </div>
@@ -749,6 +750,22 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                       电话: {shop.tel}
                     </span>
                   ) : null}
+                </div>
+              </div>
+
+              <div className="shrink-0 rounded-[20px] border border-[#e0d4c1] bg-white/85 p-2 text-center shadow-[0_10px_24px_rgba(94,64,35,0.08)]">
+                <div className="overflow-hidden rounded-[14px] bg-white">
+                  <Image
+                    alt="客服二维码"
+                    className="h-[84px] w-[84px] object-cover sm:h-[104px] sm:w-[104px]"
+                    height={104}
+                    src={customerServiceQr}
+                    width={104}
+                  />
+                </div>
+                <div className="mt-1.5 text-[10px] leading-4 text-[#6d563f] sm:text-xs">
+                  <div>客服微信</div>
+                  <div className="font-semibold text-[#513516]">wulixiaopu-nyc</div>
                 </div>
               </div>
             </div>
