@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 export type ShopItem = {
@@ -1011,6 +1012,46 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                   暂无商品数据
                 </div>
               )}
+
+              <section className="rounded-[18px] border border-[#eadfcd] bg-white/68 px-3 py-2.5 shadow-[0_10px_28px_rgba(70,44,20,0.04)] sm:rounded-[22px] sm:px-4 sm:py-3">
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                  <div className="min-w-0">
+                    <div className="text-[9px] font-semibold uppercase tracking-[0.22em] text-[#ac8760] sm:text-[10px]">
+                      Articles
+                    </div>
+                    <p className="mt-0.5 text-[10px] leading-4 text-[#7a624d] sm:text-xs">
+                      选购指南与常见问题，供搜索收录与了解参考。
+                    </p>
+                  </div>
+                  <Link
+                    href="/articles"
+                    className="inline-flex shrink-0 items-center justify-center rounded-full border border-[#dcc6a7] bg-[#fff8ec] px-3 py-1.5 text-[10px] font-semibold text-[#6d4923] transition hover:border-[#bf925f] hover:bg-[#fbecd0] sm:text-xs"
+                  >
+                    全部文章
+                  </Link>
+                </div>
+
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  <Link
+                    href="/articles/where-to-buy-vapes-in-nyc-wooli-guide"
+                    className="rounded-full border border-[#ede1d0] bg-[#fbf8f2] px-2.5 py-1 text-[10px] text-[#5c4735] transition hover:border-[#c79a64] hover:bg-white sm:text-xs"
+                  >
+                    纽约电子烟哪里买
+                  </Link>
+                  <Link
+                    href="/articles/what-is-wooli-nyc-vape-shop-guide"
+                    className="rounded-full border border-[#ede1d0] bg-[#fbf8f2] px-2.5 py-1 text-[10px] text-[#5c4735] transition hover:border-[#c79a64] hover:bg-white sm:text-xs"
+                  >
+                    雾里小铺是什么
+                  </Link>
+                  <Link
+                    href="/articles/best-us-vape-website-buying-guide"
+                    className="rounded-full border border-[#ede1d0] bg-[#fbf8f2] px-2.5 py-1 text-[10px] text-[#5c4735] transition hover:border-[#c79a64] hover:bg-white sm:text-xs"
+                  >
+                    美国电子烟网站怎么选
+                  </Link>
+                </div>
+              </section>
             </div>
           </div>
         </div>
