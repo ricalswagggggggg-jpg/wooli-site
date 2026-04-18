@@ -720,7 +720,7 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
 
               <div className="flex-1">
                 <div className="mb-2 inline-flex max-w-full rounded-full border border-[#d1bb9b] bg-[#fff8ec] px-2.5 py-1 text-[10px] font-semibold tracking-[0.14em] text-[#8d6335] sm:px-3 sm:text-xs sm:tracking-[0.18em]">
-                  贩卖人间烟火，万事皆可爱
+                  贩卖人间烟火·万物皆可爱
                 </div>
                 <h1 className="text-[1.75rem] font-semibold tracking-tight text-[#2d1b0f] sm:text-4xl">
                   {shop.name}
