@@ -119,11 +119,15 @@ function buildCartIndex(cart: Record<string, number>, menu: ShopCategory[]) {
 
 function buildCartLabel(name: string, categoryName: string) {
   const normalized = name.replace(/^新品·/u, "").trim();
+  const cleanCategory = categoryName
+    .replace(/[🌟✨🔥🚬🇯🇵]/gu, "")
+    .replace(/\s+/gu, " ")
+    .trim();
 
   if (/机器|煙杆|烟杆|烟桿|machine|杆/i.test(normalized)) {
     const withoutPrefix = normalized
       .replace(/^.*?[）)]/u, "")
-      .replace(/^(Relx|RELX|Icemax|Icebomb|ICEBOMB)\s*/u, "")
+      .replace(/^(Relx|RELX|Icemax|icemax|Icebomb|ICEBOMB|snowplus|Snowplus|SnowPlus)\s*/u, "")
       .replace(/^(六代烟杆|五代艺术家烟杆|烟杆|一次性)\s*/u, "")
       .trim();
     return withoutPrefix || normalized;
@@ -134,9 +138,20 @@ function buildCartLabel(name: string, categoryName: string) {
     return byParen;
   }
 
-  const withoutCategory = normalized.replace(categoryName, "").trim();
+  const withoutCategory = normalized.replace(cleanCategory, "").trim();
   if (withoutCategory) {
     return withoutCategory;
+  }
+
+  const withoutCommonPrefix = normalized
+    .replace(
+      /^(Relx|RELX|Icemax|icemax|Icebomb|ICEBOMB|snowplus|Snowplus|SnowPlus)\s*/u,
+      ""
+    )
+    .replace(/^(MagicGo\s+)?(鸭嘴兽\s+)?一次性\s*/u, "")
+    .trim();
+  if (withoutCommonPrefix && withoutCommonPrefix !== normalized) {
+    return withoutCommonPrefix;
   }
 
   const segments = normalized.split(/\s+/u).filter(Boolean);
