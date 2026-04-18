@@ -1060,6 +1060,13 @@ export function ShopReplica({ menu, shop, initialCategoryId }: ShopReplicaProps)
                   </Link>
                 </div>
               </section>
+
+              <section className="px-1 pb-2 pt-1">
+                <p className="text-[10px] leading-5 text-[#8a725a] sm:text-xs sm:leading-6">
+                  雾里小铺 Wooli 是面向北美用户的电子烟选购网站，提供电子烟、国烟、日韩爆珠、Relx
+                  烟弹、Snowplus、Icemax、Icebomb 及其他一次性电子烟商品展示，支持购物车确认、纽约当天送和全美邮寄服务。
+                </p>
+              </section>
             </div>
           </div>
         </div>
