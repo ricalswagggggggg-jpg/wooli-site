@@ -1365,25 +1365,25 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
         </div>
       ) : null}
 
-      <div className="fixed bottom-2 right-2 z-30 w-[min(300px,calc(100%-16px))] sm:bottom-4 sm:right-4 sm:w-[320px]">
+      <div className="fixed bottom-2 right-2 z-30 w-[min(256px,calc(100%-20px))] sm:bottom-4 sm:right-4 sm:w-[320px]">
         <div className="overflow-hidden rounded-[22px] border border-[#d7c4aa] bg-[#2f2014] text-white shadow-[0_24px_70px_rgba(47,32,20,0.35)] sm:rounded-[26px]">
-          <div className="px-3 py-3 sm:px-4 sm:py-4">
+          <div className="px-2.5 py-2.5 sm:px-4 sm:py-4">
             <div className="w-full">
-              <div className="text-left text-[13px] font-semibold tracking-[0.06em] text-[#d7bf9b]">
+              <div className="text-left text-[12px] font-semibold tracking-[0.04em] text-[#d7bf9b]">
                 购物车
               </div>
-              <div className="mt-2 text-center text-[15px] font-semibold">
+              <div className="mt-1.5 text-center text-[14px] font-semibold">
                 {totalCount > 0
                   ? `${totalCount} 件商品 · ${formatPrice(totalPrice, currency)}`
                   : "还没有添加商品"}
               </div>
               {promoSummary.discount > 0 ? (
-                <div className="mt-1 text-center text-xs text-[#f4d9a8]">
+                <div className="mt-1 text-center text-[11px] text-[#f4d9a8]">
                   已优惠 {formatPrice(promoSummary.discount, currency)}
                 </div>
               ) : null}
               <button
-                className="mx-auto mt-2 block w-[82%] rounded-full bg-[#f4d9a8] px-3 py-1.5 text-sm font-semibold text-[#513516]"
+                className="mx-auto mt-1.5 block w-[76%] rounded-full bg-[#f4d9a8] px-3 py-1 text-[13px] font-semibold text-[#513516] sm:mt-2 sm:w-[82%] sm:py-1.5 sm:text-sm"
                 onClick={openCheckout}
                 type="button"
               >
