@@ -725,9 +725,13 @@ export function ShopReplica({ menu, shop }: ShopReplicaProps) {
                 <h1 className="text-[1.75rem] font-semibold tracking-tight text-[#2d1b0f] sm:text-4xl">
                   {shop.name}
                 </h1>
-                <p className="mt-1.5 max-w-4xl whitespace-pre-line text-[11px] leading-4.5 text-[#5f4835] line-clamp-3 sm:mt-3 sm:text-[15px] sm:leading-7 sm:line-clamp-none">
+                <p className="mt-1.5 hidden max-w-4xl whitespace-pre-line text-[11px] leading-4.5 text-[#5f4835] line-clamp-3 sm:mt-3 sm:block sm:text-[15px] sm:leading-7 sm:line-clamp-none">
                   {shop.desc}
                 </p>
+                <div className="mt-2 space-y-1 text-[11px] leading-4.5 text-[#5f4835] sm:hidden">
+                  <p>电子烟买五送一，买十送三</p>
+                  <p>纽约当天送🚗，全美邮寄📦三日达！</p>
+                </div>
 
                 <div className="mt-2 flex flex-wrap gap-1.5 text-[11px] text-[#6d563f] sm:mt-5 sm:gap-3 sm:text-sm">
                   {shop.address ? (
