@@ -1,6 +1,40 @@
 import { ShopReplica, type ShopCategory, type ShopInfo } from "@/components/shop-replica";
 import shopData from "@/data/wooli-shop-local.json";
 
+const LEGO_NEW_ITEMS: ShopCategory["items"] = [
+  { _id: "lego-strawberry-aloe", name: "Relx 乐高积木 草莓芦荟", price: 20, photo: "/lego-bricks/01-strawberry-aloe.jpg", desc: "Ice Strawberry Aloe" },
+  { _id: "lego-blackcurrant-mint", name: "Relx 乐高积木 黑加仑薄荷", price: 20, photo: "/lego-bricks/02-blackcurrant-mint.jpg", desc: "Ice Black Currant Mint" },
+  { _id: "lego-longjing", name: "Relx 乐高积木 龙井", price: 20, photo: "/lego-bricks/03-longjing.jpg", desc: "Ice Longjing" },
+  { _id: "lego-pocari-sweat", name: "Relx 乐高积木 宝矿力", price: 20, photo: "/lego-bricks/04-pocari-sweat.jpg", desc: "Electro Zest" },
+  { _id: "lego-rose-ice", name: "Relx 乐高积木 玫瑰冰", price: 20, photo: "/lego-bricks/05-rose-ice.jpg", desc: "Forest Rose" },
+  { _id: "lego-coconut-water", name: "Relx 乐高积木 椰子水", price: 20, photo: "/lego-bricks/06-coconut-water.jpg", desc: "Fresh Coconut" },
+  { _id: "lego-mung-bean", name: "Relx 乐高积木 绿豆", price: 20, photo: "/lego-bricks/07-mung-bean.jpg", desc: "Bean Chill" },
+  { _id: "lego-snow-pear", name: "Relx 乐高积木 冰糖雪梨", price: 20, photo: "/lego-bricks/08-snow-pear.jpg", desc: "Snow Pear" },
+  { _id: "lego-gardenia-tea", name: "Relx 乐高积木 栀子花茶", price: 20, photo: "/lego-bricks/09-gardenia-tea.jpg", desc: "Gardenia Tea" },
+  { _id: "lego-sakura-grape", name: "Relx 乐高积木 樱花青提", price: 20, photo: "/lego-bricks/10-sakura-grape.jpg", desc: "Sakura Grape" },
+  { _id: "lego-hawthorn-ice", name: "Relx 乐高积木 山楂冰", price: 20, photo: "/lego-bricks/11-hawthorn-ice.jpg", desc: "Ice Hawthorn" },
+  { _id: "lego-plum-green-tea", name: "Relx 乐高积木 青梅绿茶", price: 20, photo: "/lego-bricks/12-plum-green-tea.jpg", desc: "Plum Tea" },
+  { _id: "lego-coconut-water-2", name: "Relx 乐高积木 椰子水", price: 20, photo: "/lego-bricks/13-coconut-water-2.jpg", desc: "Coconut Water" },
+  { _id: "lego-mung-bean-milkshake", name: "Relx 乐高积木 绿豆奶昔", price: 20, photo: "/lego-bricks/14-mung-bean-milkshake.jpg", desc: "Bean Milkshake" },
+  { _id: "lego-strawberry", name: "Relx 乐高积木 草莓", price: 20, photo: "/lego-bricks/15-strawberry.jpg", desc: "Strawberry" },
+  { _id: "lego-mineral-water", name: "Relx 乐高积木 矿泉水", price: 20, photo: "/lego-bricks/16-mineral-water.jpg", desc: "Mineral Water" },
+  { _id: "lego-green-apple", name: "Relx 乐高积木 青苹果", price: 20, photo: "/lego-bricks/17-green-apple.jpg", desc: "Crisp Green" },
+  { _id: "lego-emerald-melon", name: "Relx 乐高积木 绿宝石甜瓜", price: 20, photo: "/lego-bricks/18-emerald-melon.jpg", desc: "Emerald Melon" },
+  { _id: "lego-taro-ice-cream", name: "Relx 乐高积木 香芋冰淇淋", price: 20, photo: "/lego-bricks/19-taro-ice-cream.jpg", desc: "Taro Ice Cream" },
+  { _id: "lego-red-bean", name: "Relx 乐高积木 红豆", price: 20, photo: "/lego-bricks/20-red-bean.jpg", desc: "Red Bean" },
+  { _id: "lego-lemon-pineapple", name: "Relx 乐高积木 柠檬菠萝", price: 20, photo: "/lego-bricks/21-lemon-pineapple.jpg", desc: "Lemon Pineapple" },
+  { _id: "lego-passionfruit-green-tea", name: "Relx 乐高积木 百香果绿茶", price: 20, photo: "/lego-bricks/22-passionfruit-green-tea.jpg", desc: "Passionfruit Green Tea" },
+  { _id: "lego-cola", name: "Relx 乐高积木 可乐", price: 20, photo: "/lego-bricks/23-cola.jpg", desc: "Cola" },
+  { _id: "lego-device-orange", name: "Relx 乐高机器 橘色烟杆", price: 30, photo: "/lego-devices/24-orange-device.jpg", desc: "Orange Device" },
+  { _id: "lego-device-purple", name: "Relx 乐高机器 紫色烟杆", price: 30, photo: "/lego-devices/25-purple-device.jpg", desc: "Purple Device" }
+];
+
+const LEGO_CATEGORY: ShopCategory = {
+  _id: "relx-lego-bricks",
+  name: "Relx 乐高积木 🌟",
+  items: LEGO_NEW_ITEMS
+};
+
 const ICEBOMB_CATEGORY: ShopCategory = {
   _id: "icebomb-disposable",
   name: "Icebomb 冰爆一次性",
@@ -45,7 +79,24 @@ export default function HomePage({ searchParams }: HomePageProps) {
     (category) => Array.isArray(category.items) && category.items.length > 0
   ) as ShopCategory[]);
 
-  const menu = [...baseMenu];
+  const originalLegoItems =
+    baseMenu
+      .find((category) => category.name.includes("乐高积木"))
+      ?.items.filter((item) => item.name !== "乐高机器不单卖‼️") ?? [];
+
+  const mergedLegoCategory: ShopCategory = {
+    ...LEGO_CATEGORY,
+    items: [
+      ...originalLegoItems.slice(0, 1),
+      ...LEGO_NEW_ITEMS.filter((item) => item._id === "lego-device-orange" || item._id === "lego-device-purple"),
+      ...originalLegoItems.slice(1),
+      ...LEGO_NEW_ITEMS.filter((item) => item._id !== "lego-device-orange" && item._id !== "lego-device-purple")
+    ]
+  };
+
+  const menu = baseMenu.map((category) =>
+    category.name.includes("乐高积木") ? mergedLegoCategory : category
+  );
   const insertionIndex = menu.findIndex((category) => category.name === "Icemax 一次性");
 
   if (insertionIndex >= 0) {
